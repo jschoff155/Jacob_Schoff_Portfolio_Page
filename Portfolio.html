@@ -18,19 +18,20 @@
 </div>
 <body>
     <div class="pagesection" id="intro">
-        <div id="introPhoto">
+        <div id="intro-photo">
             <img src="profile photo stand in.jpg">
         </div>
-        <div id="introText">
-            <div id="introText-name"><h2>Jacob Schoff</h2></div>
-            <div id="introText-title"><h3>Software Engineer, Front-End, React Developer</h3></div>
+        <div id="intro-text">
+            <h2>Jacob Schoff</h2>
+            <h3>Software Engineer, Front-End, React Developer</h3>
         </div>
+            
     </div>
     <div class="pagesection" id="workhistory">
         <h2 class="section-title">Experience working in and with the following areas</h2>
         <div class="exp-box">
-            <div class="exp-box-header"></div>
-            <h3>Front-End</h3>
+            <div class="exp-box-header"><h3>Front-End</h3>
+            </div>
             <div class="exp-list">
                 <ul>
                     <li>JavaScript</li>
@@ -40,8 +41,8 @@
             </div>
         </div>
         <div class="exp-box">
-            <div class="exp-box-header"></div>
-            <h3>Back-End</h3>
+            <div class="exp-box-header"><h3>Back-End</h3>
+            </div>
             <div class="exp-list">
                 <ul>
                     <li>Python</li>
@@ -122,22 +123,18 @@
     <div class="pagesection" id="contact">
         <div id="contact-intro">
             <h2 class="section-title">Let's work together</h2>
+            <div id="lets-work-together-text">
+                <p>Do you have an idea you want to make a reality? Send me a message and I'll help make it one.</p>
+            </div>
+            <div id="lets-work-together-contact-form">
             <form>
-                <label>First name</label> <input type="text", id="fName",  name="fName">
-                <label>Last name</label> <input type="text", id="lName",  name="lName">
-                <label>Phone number</label> <input type="text", id="phoneNumber",  name="phoneNumber">
-                <label>Email</label> <input type="text", id="email",  name="email">
-                <label>Session Type</label>
-                <select>
-                    <option id="Family">Family</option>
-                    <option id="Baby">Baby</option>
-                    <option id="Couples">Couples</option>
-                    <option id="Boudior">Boudior</option>
-                </select>
-                <label>Date you would like</label> <input type="text", id="date",  name="date">
-                <label>How did you hear about me?</label> <input type="text", id="advertising",  name="advertising ">
+                <input type="text", id="fName",  name="fName" placeholder="First name">
+                <input type="text", id="lName",  name="lName" placeholder="Last name">
+                <input type="text", id="phoneNumber",  name="phoneNumber" placeholder="Phone">
+                <input type="text", id="email",  name="email" placeholder="Email">
                 <input type="Submit" value="Let's Chat">
             </form>
+        </div>
         </div>
     </div>
 </body>
