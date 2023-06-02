@@ -178,9 +178,29 @@
         margin-left:3%;
         margin-right:3%;
     }
-    #status{
-        bottom: 0px;
+    .project-title{
         text-align: center;
-        position:absolute;
+        height: 30px;
+    }
+    .project-description{
+        display:block;
+    }
+    #status, .project-title{
+        text-align: center;
+        height:30px;
+    }
+    #contact{
+        text-align: center;
+    }
+    #lets-work-together-text{
+        padding-bottom:10px;
+    }
+    input{
+        text-align: center;
+        width:100%;
+        padding-top:5px;
+        padding-bottom:5px;
+        font-size:20px;
+        color:black;
     }
 }
