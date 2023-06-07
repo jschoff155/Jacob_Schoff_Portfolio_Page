@@ -13,9 +13,6 @@
     #nav{
         display:none;
     }
-    #intro{
-        margin-top:20%;
-    }
     #intro img{
         margin-top: 5%;
         border-radius: 50%;
@@ -93,8 +90,6 @@
 }
 
 /*DESKTOP RULES*/
-
-@media screen and (min-width: 992px){
     #nav ul{
         font-size: 30px;
         padding-top:5px;
@@ -205,4 +200,3 @@
         font-size:20px;
         color:black;
     }
-}
