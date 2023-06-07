@@ -90,6 +90,8 @@
 }
 
 /*DESKTOP RULES*/
+
+@media screen and (min-width: 992px){
     #nav ul{
         font-size: 30px;
         padding-top:5px;
@@ -200,3 +202,4 @@
         font-size:20px;
         color:black;
     }
+}
