@@ -9,9 +9,6 @@
     padding:0;
     margin:0;
 }
-
-
-@media screen and (max-width:480px){
     #nav ul{
         display:flex;
         justify-content: center;
@@ -40,108 +37,56 @@
     #name{
         padding-top:20px;
         text-align: center;
+        font-size:40px;
+    }
+    #languagesknown{
+        padding-left:10px;
+        padding-right:10px;
     }
     #languagesknown ul{
-        display:inline;
+        display:inline-flex;
+        list-style: none;
+    }
+    .lkbox-details{
+        padding-right:5px;
     }
     .lkbox p{
         text-align: center;
+        padding-bottom:5px;
     }
     .lkimg{
         height:75px;
         width:75px;
     }
-}
-
-/*DESKTOP RULES*/
-
-@media screen and (min-width: 992px){
-    #intro-text{
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:auto;
-        margin-bottom:auto;
-        text-align: center;
-        justify-content: center;
+    #professionalreviews{
+        text-align:center;
     }
-    .pagesection{
-        margin-top:3%;
+    .review-text{
+        padding-top:20px;
+        padding-bottom:20px;
     }
-    #workhistory-title{
-        text-align: center;
-        margin-bottom:20px;
+    .reviewerName{
+        padding-top:10px;
     }
-    #exp-boxes{
-        display:flex;
-    }
-    .exp-box{
-        border-style:solid;
-        text-align:center; 
-        width:500px;
-        padding: 10px;
+    .description{
         margin-left:3%;
         margin-right:3%;
     }
-    .exp-box-header{
-        font-size: 32px;
+    #gustafsonReview {
+        background-color: lightblue;
+    }
+    #taylorReview{
+        background-color: bisque;
+    }
+    #hartReview{
+        background-color: aquamarine;
     }
     .project-window{
-        float:left;
         border-style:solid;
-        text-align:center; 
-        padding: 10px;
-        width:30%;
-        margin-left: 1%;
-        margin-right: 1%;
-        min-height: 200px;
-        position:relative;
-    }
-    .exp-list ul{
-        padding-top:5px;
-        list-style:none;
-    }
-    .exp-list li{
-        padding-top:2px;
-        padding-bottom:2px;
-        font-size:28px;
-    }
-    #professionalreviews{
-        text-align: center;
-        margin-top:10px;
-        margin-bottom: 10px;
-    }
-    .section-title{
-        font-size:40px;
+        border-color: red;
         text-align: center;
     }
-    #projects-list{
-        display:flex;
-        margin-left:3%;
-        margin-right:3%;
-    }
-    .project-title{
-        text-align: center;
-        height: 30px;
-    }
-    .project-description{
-        display:block;
-    }
-    #status, .project-title{
-        text-align: center;
-        height:30px;
-    }
-    #contact{
+    .pagesection{
         text-align: center;
     }
-    #lets-work-together-text{
-        padding-bottom:10px;
-    }
-    input{
-        text-align: center;
-        width:100%;
-        padding-top:5px;
-        padding-bottom:5px;
-        font-size:20px;
-        color:black;
-    }
-}
+
