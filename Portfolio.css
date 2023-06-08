@@ -23,12 +23,23 @@
         display:inline;
     }
     #introduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        width: auto;
         height:100vh;
-        text-align: center;
-        background-color: gray;
     }
-    #intro-text{
+    #introduction img{
         display:block;
+        margin: 0 auto;
+        border-radius: 50%;
+        height:400px;
+        width:400px;
+    }
+    #name{
+        padding-top:20px;
+        text-align: center;
     }
     #languagesknown ul{
         display:inline;
