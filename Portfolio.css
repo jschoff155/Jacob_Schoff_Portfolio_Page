@@ -9,111 +9,42 @@
     padding:0;
     margin:0;
 }
+
+
 @media screen and (max-width:480px){
-    #nav{
-        display:none;
+    #nav ul{
+        display:flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-left:10px;
+        margin-right:10px;
     }
-    #intro img{
-        margin-top: 5%;
-        border-radius: 50%;
-        display:block;
-        width: 300px;
-        height:300px;
-        margin-left: auto;
-        margin-right: auto;
+    #nav li{
+        display:inline;
+    }
+    #introduction{
+        height:100vh;
+        text-align: center;
+        background-color: gray;
     }
     #intro-text{
-        margin-top:3%;
-        margin-bottom:3%;
-        text-align: center;
-        font-size:30px;
-    }
-    #workhistory-title{
-        text-align: center;
-        margin-bottom: 3%;
-    }
-    .section-title{
-        text-align: center;
-        font-size:28px;
-    }
-    .exp-box{
         display:block;
-        border-style:solid;
-        text-align:center; 
-        margin-left:3%;
-        margin-right:3%;
-        margin-bottom:10px;
     }
-    .exp-box-header{
-        font-size: 28px;
+    #languagesknown ul{
+        display:inline;
     }
-    #professionalreviews{
-        margin-top:10px;
-        margin-bottom: 10px;
+    .lkbox p{
         text-align: center;
     }
-    .project-window{
-        display:block;
-        border-style:solid;
-        text-align:center; 
-        margin-left:3%;
-        margin-right:3%;
-        margin-bottom:10px;
-    }
-    #status{
-        padding-top:5px;
-        padding-bottom:5px;
-    }
-    .exp-list ul{
-        padding-top:5px;
-        list-style:none;
-    }
-    .exp-list li{
-        padding-top:2px;
-        padding-bottom:2px;
-        font-size:26px;
-    }
-    #contact{
-        text-align: center;
-    }
-    #lets-work-together-text{
-        padding-bottom:10px;
-    }
-    input{
-        text-align: center;
-        width:100%;
-        padding-top:5px;
-        padding-bottom:5px;
-        font-size:20px;
-        color:black;
+    .lkimg{
+        height:75px;
+        width:75px;
     }
 }
 
 /*DESKTOP RULES*/
 
 @media screen and (min-width: 992px){
-    #nav ul{
-        font-size: 30px;
-        padding-top:5px;
-        padding-bottom:10px;
-        margin-left:2%;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-    }
-    #intro{
-        display:grid;
-        grid-template-columns: 30% 70%;
-    }
-    #introPhoto {
-        min-width: 400px;
-    }
-    #intro img{
-        margin-left:20%;
-        width:300px;
-        height: 300px;
-        border-radius: 50%;
-    }
     #intro-text{
         margin-left:auto;
         margin-right:auto;
