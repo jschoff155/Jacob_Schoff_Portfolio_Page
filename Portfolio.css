@@ -9,84 +9,102 @@
     padding:0;
     margin:0;
 }
-    #nav ul{
-        display:flex;
-        justify-content: center;
-        justify-content: space-between;
-        margin-left:10px;
-        margin-right:10px;
-    }
-    #nav li{
-        display:inline;
-    }
-    #introduction{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        width: auto;
-        height:100vh;
-    }
-    #introduction img{
-        display:block;
-        margin: 0 auto;
-        border-radius: 50%;
-        height:400px;
-        width:400px;
-    }
-    #name{
-        padding-top:20px;
-        text-align: center;
-        font-size:40px;
-    }
-    #languagesknown{
-        padding-left:10px;
-        padding-right:10px;
-    }
-    #languagesknown ul{
-        display:inline-flex;
-        list-style: none;
-    }
-    .lkbox-details{
-        padding-right:5px;
-    }
-    .lkbox p{
-        text-align: center;
-        padding-bottom:5px;
-    }
-    .lkimg{
-        height:75px;
-        width:75px;
-    }
-    #professionalreviews{
-        text-align:center;
-    }
-    .review-text{
-        padding-top:20px;
-        padding-bottom:20px;
-    }
-    .reviewerName{
-        padding-top:10px;
-    }
-    .description{
-        margin-left:3%;
-        margin-right:3%;
-    }
-    #gustafsonReview {
-        background-color: lightblue;
-    }
-    #taylorReview{
-        background-color: bisque;
-    }
-    #hartReview{
-        background-color: aquamarine;
-    }
-    .project-window{
-        border-style:solid;
-        border-color: red;
-        text-align: center;
-    }
-    .pagesection{
-        text-align: center;
-    }
-
+#nav ul{
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:10px;
+}
+#nav li{
+    display:inline;
+}
+#introduction{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    height: 105vh;
+}
+#introduction img{
+    display:block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height:400px;
+    width:400px;
+}
+    
+#name{
+    text-align: center;
+    font-size:40px;
+    color:white;
+    margin-top:50%;
+}
+#personalskills{
+    text-align: center;
+}
+#personalskills li{
+    padding-bottom:5px;
+    list-style: none;
+}
+#languagesknown{
+    padding-left:10px;
+    padding-right:10px;
+}
+#languagesknown ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+}
+.lkbox{
+    align-content: center;
+}
+.lkbox-details{
+    padding-right:5px;
+}
+.lkbox p{
+    text-align: center;
+    padding-bottom:5px;
+}
+.lkimg{
+    height:75px;
+    width:75px;
+}
+#professionalreviews{
+    text-align:center;
+}
+.review-text{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.reviewerName{
+    padding-top:10px;
+}
+.description{
+    margin-left:3%;
+    margin-right:3%;
+}
+#gustafsonReview {
+    background-color: lightblue;
+}
+#taylorReview{
+    background-color: bisque;
+}
+#hartReview{
+    background-color: aquamarine;
+}
+.project-window{
+    border-style:solid;
+    border-color: black;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.pagesection{
+    text-align: center;
+}
+.section-title{
+    margin-top:10px;
+}
+@media screen and (min-width:500px){
+        
+}
