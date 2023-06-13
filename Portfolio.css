@@ -209,5 +209,7 @@
     }
     #contact-intro{
         background-color:#CD883B;
+        height:100px;
+        text-align: center;
     }
 }
