@@ -81,6 +81,7 @@
     }
     #professionalreviews{
         background-color: #F1C77C;
+
     }
     #projects{
         background-color: #998C70;
@@ -95,16 +96,23 @@
         text-align: center;
         padding-top:10px;
         padding-bottom:10px;
-        min-width: 200px;
+        min-width: 500px;
+    }
+    #reviewsandcontact{
+        display:grid;
+        grid-template-columns: 50% 50%;
     }
     .pagesection{
         text-align: center;
     }
     #contact-intro{
         background-color:#CD883B;
-        height:100px;
         text-align: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
+
 }
 @media screen and (max-width:500px){
     *{
