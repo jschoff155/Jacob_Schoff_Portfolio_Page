@@ -8,6 +8,7 @@
 *{
     padding:0;
     margin:0;
+    color:#080603;
 }
 #nav ul{
     display:flex;
@@ -32,12 +33,16 @@
     height:400px;
     width:400px;
 }
-    
 #name{
     text-align: center;
     font-size:40px;
     color:white;
     margin-top:50%;
+}
+#about{
+    height:200px;
+    background-color: #AA7432;
+    padding-bottom:30px;
 }
 #personalskills{
     text-align: center;
@@ -83,14 +88,11 @@
     margin-left:3%;
     margin-right:3%;
 }
-#gustafsonReview {
-    background-color: lightblue;
+#professionalreviews{
+    background-color: #F1C77C;
 }
-#taylorReview{
-    background-color: bisque;
-}
-#hartReview{
-    background-color: aquamarine;
+#projects{
+    background-color: #998C70;
 }
 .project-window{
     border-style:solid;
@@ -102,9 +104,110 @@
 .pagesection{
     text-align: center;
 }
-.section-title{
-    margin-top:10px;
+#contact-intro{
+    background-color:#CD883B;
 }
-@media screen and (min-width:500px){
-        
+@media screen and (max-width:500px){
+    *{
+        padding:0;
+        margin:0;
+        color:#080603;
+    }
+    #nav ul{
+        display:flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    #nav li{
+        display:inline;
+    }
+    #introduction{
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height: 105vh;
+    }
+    #introduction img{
+        display:block;
+        margin: 0 auto;
+        border-radius: 50%;
+        height:400px;
+        width:400px;
+    }
+    #name{
+        text-align: center;
+        font-size:40px;
+        color:white;
+        margin-top:50%;
+    }
+    #about{
+        height:200px;
+        background-color: #AA7432;
+        padding-bottom:30px;
+    }
+    #personalskills{
+        text-align: center;
+    }
+    #personalskills li{
+        padding-bottom:5px;
+        list-style: none;
+    }
+    #languagesknown{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    #languagesknown ul{
+        display:flex;
+        list-style: none;
+        justify-content: center;
+    }
+    .lkbox{
+        align-content: center;
+    }
+    .lkbox-details{
+        padding-right:5px;
+    }
+    .lkbox p{
+        text-align: center;
+        padding-bottom:5px;
+    }
+    .lkimg{
+        height:75px;
+        width:75px;
+    }
+    #professionalreviews{
+        text-align:center;
+    }
+    .review-text{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .reviewerName{
+        padding-top:10px;
+    }
+    .description{
+        margin-left:3%;
+        margin-right:3%;
+    }
+    #professionalreviews{
+        background-color: #F1C77C;
+    }
+    #projects{
+        background-color: #998C70;
+    }
+    .project-window{
+        border-style:solid;
+        border-color: black;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .pagesection{
+        text-align: center;
+    }
+    #contact-intro{
+        background-color:#CD883B;
+    }
 }
