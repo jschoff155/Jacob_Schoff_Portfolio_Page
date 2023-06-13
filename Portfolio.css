@@ -52,27 +52,19 @@
         list-style: none;
     }
     #languagesknown{
-        padding-left:10px;
-        padding-right:10px;
+        text-align: center;
+
     }
     #languagesknown ul{
         display:flex;
-        list-style: none;
         justify-content: center;
+        list-style: none;
     }
-    .lkbox{
-        align-content: center;
-    }
-    .lkbox-details{
-        padding-right:5px;
-    }
-    .lkbox p{
-        text-align: center;
-        padding-bottom:5px;
-    }
-    .lkimg{
-        height:75px;
-        width:75px;
+    #languagesknown li{
+        padding-top:20px;
+        padding-left:10px;
+        list-style: none;
+        font-size:28px;
     }
     #professionalreviews{
         text-align:center;
@@ -104,6 +96,7 @@
         text-align: center;
         padding-top:10px;
         padding-bottom:10px;
+        min-width: 200px;
     }
     .pagesection{
         text-align: center;
