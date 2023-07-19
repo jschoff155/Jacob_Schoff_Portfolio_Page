@@ -3,6 +3,23 @@
     padding:0;
     box-sizing: border-box;
 }
+h1{
+    font-size:35px;
+}
+h2{
+    font-size:30px;
+}
+p{
+    font-size:21px;
+}
+a{
+    font-size:21px;
+    text-decoration: none;
+    color:#B4E1FF
+}
+a:hover{
+    color:#E9B44C;
+}
 button{
     background-color: #E9B44C;
     border-radius: 12px;
@@ -10,16 +27,21 @@ button{
     height:50px;
     font-size:20px;
 }
+button:hover{
+    opacity: .75;
+    background-color: #595358;
+    color:#B4E1FF;
+}
 nav {
     display:inline-flex;
     column-count:2;
     color:#B4E1FF;
     width:100%;
-    background-color: #1C110A;
+    background-color: #595358;
+    font-size:30px;
 }
 #header-name{
     margin-left:4%;
-    font-size:30px;
     column-width: auto;
     width:60%;
 }
@@ -29,14 +51,12 @@ nav {
 }
 #navMenu>ul>li{
     padding-right:30px;
-    font-size:30px;
-    
 }
 #navMenu>ul>li:hover{
     color:#9B2915;
 }
 #homeArea{
-    height:800px;
+    height:850px;
 }
 #homeArea_text{
     display:flex;
@@ -50,9 +70,11 @@ nav {
 }
 #servicesOffered_blocks{
     display:inline-flex;
+    margin-left:10%;
+    margin-right:10%;
 }
 .serviceOffered_singleblock{
-    background-color: #1C110A;
+    background-color: #595358;
     width:33%;
     padding:30px;
     margin-left:15px;
@@ -65,6 +87,9 @@ nav {
     padding-bottom:20px;
 }
 #projectHeader{
+    margin-top:10%;
+}
+#projectHeader, #projectSubHeader{
     text-align: center;
 }
 .projectrow{
@@ -83,13 +108,71 @@ nav {
     align-items: center;
     background-color: #595358;
     color:#B4E1FF;
-    font-size: 50px;
 }
 .projectTitle{
     font-size:40px;
     padding-bottom:10px;
 }
 .projectText{
-    font-size:20px;
     padding-bottom:10px;
+}
+#aboutMeArea{
+    column-count: 2;
+    display:flex;
+}
+#aboutMePhotoSide{
+    display:flex;
+    width:40%;
+}
+#aboutMePhoto{
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:20%;
+    
+}
+#aboutMeTextSide{
+    margin-top:10%;
+    width:60%;
+}
+#aboutMeTextSide{
+    margin-right:40px;
+}
+#contactAreaHeader{
+    text-align: center;
+    margin-top:10%;
+    padding-bottom:20px;
+}
+#contactArea{
+    column-count: 3;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.icon{
+    height:100px;
+    width:100px;
+}
+.contactArea_window{
+    background-color: #595358;
+    width:350px;
+    height:200px;
+    color:#B4E1FF;
+    border-radius: 10%;
+}
+.contactArea_textbox{
+    text-align: center;
+    padding-top:20px;
+}
+.contactArea_boxhead{
+    padding-bottom:10px;
+}
+footer{
+    margin-top:10%;
+    background-color:#595358;
+    color:#B4E1FF;
+    text-align: center;
 }
