@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 @media only screen and (max-width: 800px) {
     *{
@@ -390,9 +391,7 @@
     #aboutMeTextSide{
         margin-top:10%;
         width:100%;
-    }
-    #aboutMeTextSide{
-        margin-right:40px;
+        overflow: auto;
     }
     #contactAreaHeader{
         text-align: center;
