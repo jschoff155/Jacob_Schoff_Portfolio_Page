@@ -6,6 +6,9 @@
 button{
     background-color: #E9B44C;
     border-radius: 12px;
+    width:200px;
+    height:50px;
+    font-size:20px;
 }
 nav {
     display:inline-flex;
@@ -70,12 +73,23 @@ nav {
 }
 .projectCard{
     width:50%;
+    padding-left:30px;
+    padding-top:30px;
 }
 .projectScreenshot{
     display:flex;
     width:50%;
     justify-content: center;
     align-items: center;
-    background-color: #1C110A;
+    background-color: #595358;
     color:#B4E1FF;
+    font-size: 50px;
+}
+.projectTitle{
+    font-size:40px;
+    padding-bottom:10px;
+}
+.projectText{
+    font-size:20px;
+    padding-bottom:10px;
 }
