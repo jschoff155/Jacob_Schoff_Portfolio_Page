@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 @media only screen and (max-width: 800px) {
+    *{
+        text-align: center;
+    }
+    h1{
+        font-size:2rem;
+    }
+    h2{
+        font-size:1.7rem;
+    }
+    p{
+        font-size:1.5rem;
+    }
     #navMenu{
         display:none;
     }
@@ -20,188 +32,406 @@
         margin-bottom:30px;
         min-width:100%;
     }
-
+    .projectScreenshot, .projectCard{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contactArea{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactArea_window{
+        display:block;
+        margin-bottom:30px;
+        min-width:100%;
+    }
+    #desktopView{
+        display:none;
+    }
+    .projectrow{
+        display:flex;
+    }
+    a{
+        font-size:21px;
+        text-decoration: none;
+        color:#B4E1FF
+    }
+    a:hover{
+        color:#E9B44C;
+    }
+    button{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        width:200px;
+        height:50px;
+        font-size:1.3rem;
+    }
+    button:hover{
+        opacity: .75;
+        background-color: #595358;
+        color:#B4E1FF;
+    }
+    nav {
+        display:inline-flex;
+        column-count:2;
+        color:#B4E1FF;
+        width:100%;
+        background-color: #595358;
+        font-size:30px;
+    }
+    #menuButton{
+        height:60px;
+        width:60px;
+    }
+    #header-name{
+        margin-left:4%;
+        column-width: auto;
+        width:60%;
+    }
+    #navMenu>ul{
+        list-style: none;
+        display:inline-flex;
+    }
+    #navMenu>ul>li{
+        padding-right:30px;
+    }
+    #navMenu>ul>li:hover{
+        color:#9B2915;
+    }
+    #homeArea{
+        height:100vh;
+    }
+    #homeArea_text{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #servicesHeader{
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    #servicesOffered_blocks{
+        display:inline-flex;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .serviceOffered_singleblock{
+        background-color: #595358;
+        width:33%;
+        padding:30px;
+        margin-left:15px;
+        margin-right:15px;
+        border-radius: 15px;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    .serviceOffered_header{
+        padding-bottom:20px;
+    }
+    #projectHeader{
+        margin-top:10%;
+    }
+    #projectHeader, #projectSubHeader{
+        text-align: center;
+    }
+    .projectrow{
+        display:flex;
+        flex-direction: column;
+        min-height:200px;
+    }
+    .projectButtonArea{
+        display:flex;
+        justify-content: center;
+    }
+    .projectRowButton{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        min-width:100px;
+        min-height:50px;
+        font-size:1.3rem;
+    }
+    .projectCard{
+        display:block;
+        width:100%;
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+    .projectScreenshot{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #595358;
+        color:#B4E1FF;
+        min-height:100px;
+    }
+    .projectTitle{
+        padding-bottom:10px;
+    }
+    .projectText{
+        padding-bottom:10px;
+    }
+    #aboutMeArea{
+        column-count: 2;
+        display:flex;
+    }
+    #aboutMePhotoSide{
+        display:flex;
+        width:40%;
+    }
+    #aboutMePhoto{
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:20%;
+        
+    }
+    #aboutMeTextSide{
+        margin-top:10%;
+        width:60%;
+    }
+    #aboutMeTextSide{
+        margin-right:40px;
+    }
+    #contactAreaHeader{
+        text-align: center;
+        margin-top:10%;
+        padding-bottom:20px;
+    }
+    #contactArea{
+        column-count: 3;
+        display:flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .icon{
+        height:100px;
+        width:100px;
+    }
+    .contactArea_window{
+        background-color: #595358;
+        width:350px;
+        height:200px;
+        color:#B4E1FF;
+        border-radius: 10%;
+    }
+    .contactArea_textbox{
+        text-align: center;
+        padding-top:20px;
+    }
+    .contactArea_boxhead{
+        padding-bottom:10px;
+    }
+    footer{
+        margin-top:10%;
+        background-color:#595358;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    #attributionArea{
+        display:none;
+    }
+    
 }
 @media only screen and (min-width: 800px) {
     #menuButton{
         display:none;
     }
-}
-h1{
-    font-size:35px;
-}
-h2{
-    font-size:30px;
-}
-p{
-    font-size:21px;
-}
-a{
-    font-size:21px;
-    text-decoration: none;
-    color:#B4E1FF
-}
-a:hover{
-    color:#E9B44C;
-}
-button{
-    background-color: #E9B44C;
-    border-radius: 12px;
-    width:200px;
-    height:50px;
-    font-size:20px;
-}
-button:hover{
-    opacity: .75;
-    background-color: #595358;
-    color:#B4E1FF;
-}
-nav {
-    display:inline-flex;
-    column-count:2;
-    color:#B4E1FF;
-    width:100%;
-    background-color: #595358;
-    font-size:30px;
-}
-
-#menuButton{
-    height:60px;
-    width:60px;
-}
-#header-name{
-    margin-left:4%;
-    column-width: auto;
-    width:60%;
-}
-#navMenu>ul{
-    list-style: none;
-    display:inline-flex;
-}
-#navMenu>ul>li{
-    padding-right:30px;
-}
-#navMenu>ul>li:hover{
-    color:#9B2915;
-}
-#homeArea{
-    height:850px;
-}
-#homeArea_text{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-#servicesHeader{
-    text-align: center;
-    padding-top:50px;
-    padding-bottom:50px;
-}
-#servicesOffered_blocks{
-    display:inline-flex;
-    margin-left:10%;
-    margin-right:10%;
-}
-.serviceOffered_singleblock{
-    background-color: #595358;
-    width:33%;
-    padding:30px;
-    margin-left:15px;
-    margin-right:15px;
-    border-radius: 15px;
-    color:#B4E1FF;
-    text-align: center;
-}
-.serviceOffered_header{
-    padding-bottom:20px;
-}
-#projectHeader{
-    margin-top:10%;
-}
-#projectHeader, #projectSubHeader{
-    text-align: center;
-}
-.projectrow{
-    display:flex;
-    height:200px;
-}
-.projectCard{
-    width:50%;
-    padding-left:30px;
-    padding-top:30px;
-}
-.projectScreenshot{
-    display:flex;
-    width:50%;
-    justify-content: center;
-    align-items: center;
-    background-color: #595358;
-    color:#B4E1FF;
-}
-.projectTitle{
-    font-size:40px;
-    padding-bottom:10px;
-}
-.projectText{
-    padding-bottom:10px;
-}
-#aboutMeArea{
-    column-count: 2;
-    display:flex;
-}
-#aboutMePhotoSide{
-    display:flex;
-    width:40%;
-}
-#aboutMePhoto{
-    height:300px;
-    width:300px;
-    border-radius: 50%;
-    margin-left:20%;
-    margin-right:20%;
-    margin-top:20%;
-    
-}
-#aboutMeTextSide{
-    margin-top:10%;
-    width:60%;
-}
-#aboutMeTextSide{
-    margin-right:40px;
-}
-#contactAreaHeader{
-    text-align: center;
-    margin-top:10%;
-    padding-bottom:20px;
-}
-#contactArea{
-    column-count: 3;
-    display:flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.icon{
-    height:100px;
-    width:100px;
-}
-.contactArea_window{
-    background-color: #595358;
-    width:350px;
-    height:200px;
-    color:#B4E1FF;
-    border-radius: 10%;
-}
-.contactArea_textbox{
-    text-align: center;
-    padding-top:20px;
-}
-.contactArea_boxhead{
-    padding-bottom:10px;
-}
-footer{
-    margin-top:10%;
-    background-color:#595358;
-    color:#B4E1FF;
-    text-align: center;
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size:30px;
+    }
+    p{
+        font-size:21px;
+    }
+    #mobileView{
+        display:none;
+    }
+    a{
+        font-size:21px;
+        text-decoration: none;
+        color:#B4E1FF
+    }
+    a:hover{
+        color:#E9B44C;
+    }
+    button{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        width:200px;
+        height:50px;
+        font-size:1.3rem;
+    }
+    button:hover{
+        opacity: .75;
+        background-color: #595358;
+        color:#B4E1FF;
+    }
+    nav {
+        display:inline-flex;
+        column-count:2;
+        color:#B4E1FF;
+        width:100%;
+        background-color: #595358;
+        font-size:30px;
+    }
+    #menuButton{
+        height:60px;
+        width:60px;
+    }
+    #header-name{
+        margin-left:4%;
+        column-width: auto;
+        width:60%;
+    }
+    #navMenu>ul{
+        list-style: none;
+        display:inline-flex;
+    }
+    #navMenu>ul>li{
+        padding-right:30px;
+    }
+    #navMenu>ul>li:hover{
+        color:#9B2915;
+    }
+    #homeArea{
+        height:100vh;
+    }
+    #homeArea_text{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #servicesHeader{
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    #servicesOffered_blocks{
+        display:inline-flex;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .serviceOffered_singleblock{
+        background-color: #595358;
+        width:33%;
+        padding:30px;
+        margin-left:15px;
+        margin-right:15px;
+        border-radius: 15px;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    .serviceOffered_header{
+        padding-bottom:20px;
+    }
+    #projectHeader{
+        margin-top:10%;
+    }
+    #projectHeader, #projectSubHeader{
+        text-align: center;
+    }
+    .projectrow{
+        display:flex;
+        min-height:200px;
+    }
+    .projectButtonArea{
+        display:flex;
+    }
+    .projectRowButton{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        min-width:100px;
+        min-height:50px;
+        font-size:1.3rem;
+    }
+    .projectCard{
+        width:50%;
+        padding-left:30px;
+        padding-top:30px;
+    }
+    .projectScreenshot{
+        display:flex;
+        width:50%;
+        justify-content: center;
+        align-items: center;
+        background-color: #595358;
+        color:#B4E1FF;
+    }
+    .projectTitle{
+        padding-bottom:10px;
+    }
+    .projectText{
+        padding-bottom:10px;
+    }
+    #aboutMeArea{
+        column-count: 2;
+        display:flex;
+    }
+    #aboutMePhotoSide{
+        display:flex;
+        width:40%;
+    }
+    #aboutMePhoto{
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:20%;
+        
+    }
+    #aboutMeTextSide{
+        margin-top:10%;
+        width:60%;
+    }
+    #aboutMeTextSide{
+        margin-right:40px;
+    }
+    #contactAreaHeader{
+        text-align: center;
+        margin-top:10%;
+        padding-bottom:20px;
+    }
+    #contactArea{
+        column-count: 3;
+        display:flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .icon{
+        height:100px;
+        width:100px;
+    }
+    .contactArea_window{
+        background-color: #595358;
+        width:350px;
+        height:200px;
+        color:#B4E1FF;
+        border-radius: 10%;
+    }
+    .contactArea_textbox{
+        text-align: center;
+        padding-top:20px;
+    }
+    .contactArea_boxhead{
+        padding-bottom:10px;
+    }
+    footer{
+        margin-top:10%;
+        background-color:#595358;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    #attributionArea{
+        display:none;
+    }
 }
