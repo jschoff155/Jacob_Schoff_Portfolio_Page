@@ -176,26 +176,25 @@
     #aboutMeArea{
         column-count: 2;
         display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
     #aboutMePhotoSide{
         display:flex;
-        width:40%;
+        justify-content: center;
     }
     #aboutMePhoto{
+        display:block;
         height:300px;
         width:300px;
         border-radius: 50%;
-        margin-left:20%;
-        margin-right:20%;
-        margin-top:20%;
-        
+        margin-top:30px;
     }
     #aboutMeTextSide{
+        display:block;
         margin-top:10%;
-        width:60%;
-    }
-    #aboutMeTextSide{
-        margin-right:40px;
+        margin-left:20px;
+        margin-right:20px;
     }
     #contactAreaHeader{
         text-align: center;
@@ -390,7 +389,7 @@
     }
     #aboutMeTextSide{
         margin-top:10%;
-        width:60%;
+        width:100%;
     }
     #aboutMeTextSide{
         margin-right:40px;
