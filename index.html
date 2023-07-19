@@ -11,82 +11,123 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div style="background-image:url('./Assets/Cabin\ Image3.jpg');" class="title" id="introduction">
-        <div id="introductionContent">
-        <h2 id="name">Jacob Schoff<br>Software Engineer</h2>
-        </div>
-    </div>
-    <div id="about">
-        <div id="aboutcontent">
-        <h2 class="pagesection">About</h2>
-            <div id="personalskills">
-            <li>Quick learning | Motivated | Growth Mentality</li>
-            <li>4+ years of software experience</li>
-            <li>Front-end web development specialty with backend and data knowledge</li>
-            <li>Continuous growth approach</li>
-            </div>
-        <div id="languagesknown">
-            <h2>Experienced In</h2>
+    <nav>
+        <div id="header-name">Jake Schoff</div>
+        <div id="navMenu">
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Python</li>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
         </div>
+    </nav>
+    <div id="homeArea">
+        <div id="homeArea_text">
+            <h1>Hello, <br> My Name Is Jake</h1>
+            <button id="portfolioButton">Portfolio</button>
         </div>
     </div>
-    <div class="pagesection" id="projects">
-        <h2 class="section-title">In Development</h2>
-        <div id="projects-list">
-            <div class="project-window">
-                <div class="project-title">
-                    <h3>Rico's Tacos</h3>
-                </div>
-                <div class="project-description"><p>Landing Page</p>
-                </div>
+    <div id="servicesArea">
+        <div id="servicesHeader">
+            <h1>Services</h1>
+            <h2>Specializing in front-end web development, my expertise is focused on making your web page
+                not only user friendly but visually appealing. Why give the customer a web page when you can
+                give them an experience?
+            </h2>
+        </div>
+        <div id="servicesOffered_blocks">
+            <div class="serviceOffered_singleblock">
+                <h3  class="serviceOffered_header">UI/UX Design</h3>
+                <p class="serviceOffered_text">With a plethora of tools at my disposal, crafting a digital experience is my forte.</p>
             </div>
-            <div class="project-window">
-                <div class="project-title">
-                    <h3>Portfolio Redesign</h3>
-                </div>
-                <div class="project-description"><p>UI/UX updates | Content updates</p>
-                </div>
+            <div class="serviceOffered_singleblock">
+                <h3 class="serviceOffered_header">SEO Optimization</h3>
+                <p class="serviceOffered_text">Search engine algorithms can cause unexpected issues with marketing of your product. Allow me to help
+                    navigate through those difficult waters with optimization techniques.
+                </p>
             </div>
-            <div class="project-window">
-                <div class="project-title"><h3>Hart Financial Services</h3>
-                </div>
-                <div class="project-description"><p>Landing page | Calculators | Data retention</p>
-                </div>
+            <div class="serviceOffered_singleblock">
+                <h3 class="serviceOffered_header">Landing Page</h3>
+                <p class="serviceOffered_text">Building a business has enough headaches and having a healthy webpage shouldn't be one more.
+                </p>
             </div>
         </div>
     </div>
-    <div id="reviewsandcontact">
-        <div class="pagesection" id="professionalreviews">
-            <div class="review-text" id="hartReview">
-                <p class="description">"I've worked with Jake for 5 years now, every day he comes in with a positive, can do attitude.
-                    He's quick, efficient, and knowledgeable leading to his presence creative a warm and welcoming environment for colleagues and clients"</p></h3>
-                <p class="reviewerName">- <b>Scott Hart</b></p>
-                <p class="professionalDescription">Mortgage Consultant with Wells Fargo</p>
-            </div>
-            <div class="review-text" id="gustafsonReview">
-                <p class="description">"You will feel heard. Not only did he offer amazing suggestions to my idea, he truly heard what I wanted and needed and incorporated that into my product"</p></h3>
-                <p class="reviewerName">- <b>Benett Gustafson</b></p>
-                <p class="professionalDescription"></p>
-            </div>
-            <div class="review-text" id="taylorReview">
-                <p class="description">"Jacob is very helpful and he takes the time to get the job done right"</p></h3>
-                <p class="reviewerName">- <b>Devin Taylor</b></p>
-                <p class="professionalDescription">Technical Media Producer with Gray Media</p>
+    <div id="projectArea">
+        <h1 id="projectHeader">Recent Projects</h1>
+        <div class="projectrow">
+            <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            <div class="projectCard" id="socialMediaApp">
+                <h2>Social Media App</h2>
+                <p>Includes navigation, primary feed, messaging area, and a search bar</p>
+                <button class="linktosourcecode">Source Code</button>
+                <button class="linktowebpage">See the page</button>
             </div>
         </div>
-        <div id="contact-intro">
-            <h2 class="section-title">Let's Work Together</h2>
-                <div id="lets-work-together-text">
-                    <p>Send me an email to make an inquiry</p>
-                    <p>schoff.software@gmail.com</p>
-                </div>
+        <div class="projectrow">
+            <div class="projectCard" id="taylorProductions">
+                <h2>Taylor Productions</h2>
+                <p>Includes links to numerous videos and created content, commentary areas, search bar, and more</p>
+                <button class="linktosourcecode">Source Code</button>
+                <button class="linktowebpage">See the page</button>
+            </div>
+            <div class="projectScreenshot"><p>Coming Soon!</p></div>
+        </div>
+        <div class="projectrow">
+            <div class="projectCard" id="hartMortgage">
+                <h2>Hart Mortgage Page</h2>
+                <p>Includes links to complete a mortgage application, learn more about the mortgage process, and provide mortgage assistance tools </p>
+                <button class="linktosourcecode">Source Code</button>
+                <button class="linktowebpage">See the page</button>
+            </div>
+            <div class="projectScreenshot"><p>Coming Soon!</p></div>
+        </div>
+        <div class="projectrow">
+            <div class="projectCard" id="cheeseWheels">
+                <h2>Cheese Wheels</h2>
+                <p>Includes a menu, hours, locations, and more about the quality and perfection of the products</p>
+                <button class="linktosourcecode">Source Code</button>
+                <button class="linktowebpage">See the page</button>
+            </div>
+            <div class="projectScreenshot"><p>Coming Soon!</p></div>
+        </div>
+        <div class="projectrow">
+            <div class="projectCard" id="ricosTacos">
+                <h2>Rico's Tacos</h2>
+                <p>Includes a menu, hours, location, ingredients, and more about Ames' best Taco Truck</p>
+                <button class="linktosourcecode">Source Code</button>
+                <button class="linktowebpage">See the page</button>
+            </div>
+            <div class="projectScreenshot"><p>Coming Soon!</p></div>
+        </div>
+        
+       
+        
+       
+    </div>
+    <div id="aboutMeArea">
+        <img src="">
+        <h1>About Me</h1>
+        <h2>Web Developer</h2>
+        <p>Proficient in HTML, CSS, and JavaScript, I pride myself on having a CI/CD approach to my education.
+            Programming is an ever evolving field and I am working diligently to better myself through courses, seminars, and 
+            programming groups.
+        </p>
+    </div>
+    <div id="contactArea">
+        <div class="contactArea_window">
+            <h2>Phone</h2>
+            <p>515-450-6039</p>
+        </div>
+        <div class="contactArea_window">
+            <h2>Email</h2>
+            <p>Jacob.Alan.Schoff@gmail.com</p>
+        </div>
+        <div class="contactArea_window">
+            <h2>LinkedIn</h2>
+            <p>https://www.linkedin.com/in/jacob-schoff-b3350a82/</p>
         </div>
     </div>
 </body>
