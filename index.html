@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Portfolio.js"></script>
     <title>Jacob Schoff Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
                 <li>Contact</li>
             </ul>
         </div>
-        <img id="menuButton" src="Assets/menu.png">
+        <img onclick="menuClick()" id="menuButton" src="Assets/menu.png">
     </nav>
     <div id="homeArea">
         <div id="homeArea_text">
@@ -33,10 +34,10 @@
     <div id="servicesArea">
         <div id="servicesHeader">
             <h1>Services</h1>
-            <h2>Specializing in front-end web development, my expertise is focused on making your web page
+            <p>Specializing in front-end web development, my expertise is focused on making your web page
                 not only user friendly but visually appealing. Why give the customer a web page when you can
                 give them an experience?
-            </h2>
+            </p>
         </div>
         <div id="servicesOffered_blocks">
             <div class="serviceOffered_singleblock">
@@ -58,7 +59,7 @@
     </div>
     <div id="projectArea">
         <h1 id="projectHeader">Recent Projects</h1>
-        <h2 id="projectSubHeader"><em>All projects built using HTML5, CSS3, JavaScript</em></h2>
+        <p id="projectSubHeader"><em>All projects built using HTML5, CSS3, JavaScript</em></p>
         <div id="desktopView">
             <div class="projectrow">
                 <div class="projectScreenshot"><p>Coming Soon!</p></div>
@@ -196,8 +197,8 @@
                 <p>515-450-6039</p>
             </div>
         </div>
-        <div class="contactArea_window">
-            <div class="contactArea_textbox">
+        <div id="emailcontactwindow" class="contactArea_window">
+            <div  class="contactArea_textbox">
                 <h2 class="contactArea_boxhead">Email</h2>
                 <img class="icon" src="Assets/message.png">
                 <p>Jacob.Alan.Schoff@gmail.com</p>
@@ -206,18 +207,21 @@
         <div class="contactArea_window">
             <div class="contactArea_textbox">
                 <h2 class="contactArea_boxhead">Github</h2>
-            <img class="icon" src="Assets/github.png" a href="https://github.com/jschoff155">
+                <img class="icon" src="Assets/github.png" a href="https://github.com/jschoff155">
             </div>
         </div>
     </div>
     <footer>
         <h2>Jacob Schoff</h2>
         <h3>Web development done differently</h3>
-        <button>Attribution Details</button>
+        <div id="footerAttributionAreaButtons">
+            <button class="attributionButton" onclick="showAttribution()" id="attributionareabtn">Attribution Details</button>
+            <button class="attributionButton" onclick="closeAttribution()"id="attributionareaclosebtn">Close Attribution Details</button>
+        </div>
         <div id="attributionArea">
-            <a href="https://www.flaticon.com/free-animated-icons/phone" title="phone animated icons">Phone animated icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-animated-icons/email" title="email animated icons">Email animated icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.com/free-animated-icons/phone" title="phone animated icons">Phone animated icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-animated-icons/email" title="email animated icons">Email animated icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a><br>
             <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a>
         </div>
     </footer>

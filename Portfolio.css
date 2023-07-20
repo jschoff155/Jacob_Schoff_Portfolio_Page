@@ -9,13 +9,13 @@
         text-align: center;
     }
     h1{
-        font-size:2rem;
+        font-size:3rem;
     }
     h2{
         font-size:1.7rem;
     }
     p{
-        font-size:1.5rem;
+        font-size:1.3rem;
     }
     #navMenu{
         display:none;
@@ -45,7 +45,11 @@
     .contactArea_window{
         display:block;
         margin-bottom:30px;
-        min-width:100%;
+        background-color: #595358;
+        min-width:350px;
+        height:200px;
+        color:#B4E1FF;
+        border-radius: 10%;
     }
     #desktopView{
         display:none;
@@ -145,6 +149,7 @@
     .projectButtonArea{
         display:flex;
         justify-content: center;
+        margin-bottom:20px;
     }
     .projectRowButton{
         background-color: #E9B44C;
@@ -156,8 +161,9 @@
     .projectCard{
         display:block;
         width:100%;
+        padding-left:30px;
+        padding-right:30px;
         padding-top:30px;
-        padding-bottom: 30px;
     }
     .projectScreenshot{
         display:flex;
@@ -196,6 +202,8 @@
         margin-top:10%;
         margin-left:20px;
         margin-right:20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     #contactAreaHeader{
         text-align: center;
@@ -213,13 +221,6 @@
         height:100px;
         width:100px;
     }
-    .contactArea_window{
-        background-color: #595358;
-        width:350px;
-        height:200px;
-        color:#B4E1FF;
-        border-radius: 10%;
-    }
     .contactArea_textbox{
         text-align: center;
         padding-top:20px;
@@ -233,7 +234,15 @@
         color:#B4E1FF;
         text-align: center;
     }
-    #attributionArea{
+    #footerAttributionAreaButtons{
+        width:100%;
+    }
+    .attributionButton{
+        width:100%;
+        display:block;
+        align-self: center;
+    }
+    #attributionArea, #attributionareaclosebtn{
         display:none;
     }
     
@@ -243,13 +252,13 @@
         display:none;
     }
     h1{
-        font-size:35px;
+        font-size:3rem;
     }
     h2{
-        font-size:30px;
+        font-size:1.7rem;
     }
     p{
-        font-size:21px;
+        font-size:1.3rem;
     }
     #mobileView{
         display:none;
@@ -344,6 +353,7 @@
     }
     .projectButtonArea{
         display:flex;
+        margin-bottom:20px;
     }
     .projectRowButton{
         background-color: #E9B44C;
@@ -355,6 +365,7 @@
     .projectCard{
         width:50%;
         padding-left:30px;
+        padding-right:30px;
         padding-top:30px;
     }
     .projectScreenshot{
@@ -376,8 +387,8 @@
         display:flex;
     }
     #aboutMePhotoSide{
-        display:flex;
-        width:40%;
+        display:block;
+        width:50%;
     }
     #aboutMePhoto{
         height:300px;
@@ -386,12 +397,11 @@
         margin-left:20%;
         margin-right:20%;
         margin-top:20%;
-        
     }
     #aboutMeTextSide{
+        display:block;
         margin-top:10%;
-        width:100%;
-        overflow: auto;
+        width:50%;
     }
     #contactAreaHeader{
         text-align: center;
@@ -402,8 +412,8 @@
         column-count: 3;
         display:flex;
         justify-content: space-between;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left:5%;
+        margin-right:5%;
     }
     .icon{
         height:100px;
@@ -415,6 +425,11 @@
         height:200px;
         color:#B4E1FF;
         border-radius: 10%;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #emailcontactwindow{
+        min-width:350px !important;
     }
     .contactArea_textbox{
         text-align: center;
@@ -429,7 +444,10 @@
         color:#B4E1FF;
         text-align: center;
     }
-    #attributionArea{
+    .attributionButton{
+        width:100%;
+    }
+    #attributionArea, #attributionareaclosebtn{
         display:none;
     }
 }
