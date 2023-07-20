@@ -12,36 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Nunito:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="desktopNav">
-        <div id="header-name">Jake Schoff</div>
+    <nav id="Nav">
+        <h1 id="header-name">Jake Schoff</h1>
         <div id="navMenu">
             <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#homeArea">Home</a></li>
+                <li><a href="#servicesArea">Services</a></li>
+                <li><a href="#projectArea">Projects</a></li>
+                <li><a href="#aboutMeArea">About</a></li>
+                <li><a href="#contactAreaHeader">Contact</a></li>
             </ul>
         </div>
         <img onclick="menuClick()" id="menuButton" src="Assets/menu.png">
     </nav>
-    <nav id="mobileNav">
-        <div id="header-name">Jake Schoff</div>
-        <div id="navMenu">
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <img onclick="menuClick()" id="menuButton" src="Assets/menu.png">
-    </nav>
+    <div id="navMenuMobile">
+        <ul>
+            <li><a href="#homeArea">Home</a></li>
+            <li><a href="#servicesArea">Services</a></li>
+            <li><a href="#projectArea">Projects</a></li>
+            <li><a href="#aboutMeArea">About</a></li>
+            <li><a href="#contactAreaHeader">Contact</a></li>
+            <li><a onclick="menuClose()" href="">Close Menu</a></li>
+        </ul>
+    </div>
     <div id="homeArea">
         <div id="homeArea_text">
             <h1>Hello, <br> My Name Is Jake</h1>
-            <button id="portfolioButton">Portfolio</button>
         </div>
     </div>
     <div id="servicesArea">

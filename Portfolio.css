@@ -20,12 +20,6 @@
     #navMenu{
         display:none;
     }
-    #navMenuMobile{
-        display:flex;
-    }
-    #navMenuMobile>ul{
-        list-style: none;
-    }
     #menuButton{
         display:block;
     }
@@ -85,24 +79,39 @@
     }
     nav {
         display:inline-flex;
-        column-count:2;
         color:#B4E1FF;
         width:100%;
         background-color: #595358;
         font-size:30px;
     }
+    #navMenu{
+        display:none;
+    }
+    #navMenuMobile{
+        display:none;
+        color:#B4E1FF; 
+        background-color: #595358;
+    }
+    #navMenuMobile>ul{
+        font-size: 1.7rem;
+    }
+    #navMenuMobile>ul>li{
+        padding-bottom:5px;
+    }
     #menuButton{
         height:60px;
         width:60px;
+        margin-right:3%;
     }
     #header-name{
-        margin-left:4%;
-        column-width: auto;
-        width:60%;
+        margin-left:5%;
+        text-align: left;
+        width:80%;
     }
-    #navMenu>ul{
+    #navMenuMobile>ul{
         list-style: none;
-        display:inline-flex;
+        display:block;
+        width:100%;
     }
     #navMenu>ul>li{
         padding-right:30px;
@@ -197,10 +206,10 @@
         display:flex;
     }
     #aboutMePhoto{
-        justify-content: center;
-        align-items:center;
         height:300px;
         width:300px;
+        margin-left:10%;
+        margin-right:10%;
         border-radius: 50%;
         margin-top:30px;
     }
@@ -298,6 +307,9 @@
         background-color: #595358;
         font-size:30px;
     }
+    #navMenuMobile{
+        display:none;
+    }
     #menuButton{
         height:60px;
         width:60px;
@@ -310,6 +322,7 @@
     #navMenu>ul{
         list-style: none;
         display:inline-flex;
+        margin-top:1.5%;
     }
     #navMenu>ul>li{
         padding-right:30px;

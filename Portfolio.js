@@ -10,4 +10,9 @@ function closeAttribution() {
 }
 function menuClick() {
     document.getElementById("navMenuMobile").style.display="block";
+    document.getElementById("menuButton").style.display="none";
+}
+function menuClose() {
+    document.getElementById("navMenuMobile").style.display="none";
+    document.getElementById("menuButton").style.display="block";
 }
