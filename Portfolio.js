@@ -9,5 +9,5 @@ function closeAttribution() {
     document.getElementById("attributionareabtn").style.display="block";
 }
 function menuClick() {
-    document.getElementById("navMenu").style.display="block";
+    document.getElementById("navMenuMobile").style.display="block";
 }
