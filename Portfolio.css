@@ -1,213 +1,474 @@
-/*
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-*/
-
 *{
-    padding:0;
     margin:0;
-    color:#080603;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-#nav ul{
-    display:flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin-left:10px;
-    margin-right:10px;
-}
-#nav li{
-    display:inline;
-}
-#introduction{
-    display: flex;
-    width: auto;
-    justify-content: center;
-    height: 105vh;
-}
-#introduction img{
-    display:block;
-    margin: 0 auto;
-    border-radius: 50%;
-    height:400px;
-    width:400px;
-}
-#name{
-    text-align: center;
-    font-size:40px;
-    color:white;
-    margin-top:50%;
-}
-#about{
-    height:200px;
-    background-color: #AA7432;
-    padding-bottom:30px;
-}
-#personalskills{
-    text-align: center;
-}
-#personalskills li{
-    padding-bottom:5px;
-    list-style: none;
-}
-#languagesknown{
-    padding-left:10px;
-    padding-right:10px;
-}
-#languagesknown ul{
-    display:flex;
-    list-style: none;
-    justify-content: center;
-}
-.lkbox{
-    align-content: center;
-}
-.lkbox-details{
-    padding-right:5px;
-}
-.lkbox p{
-    text-align: center;
-    padding-bottom:5px;
-}
-.lkimg{
-    height:75px;
-    width:75px;
-}
-#professionalreviews{
-    text-align:center;
-}
-.review-text{
-    padding-top:20px;
-    padding-bottom:20px;
-}
-.reviewerName{
-    padding-top:10px;
-}
-.description{
-    margin-left:3%;
-    margin-right:3%;
-}
-#professionalreviews{
-    background-color: #F1C77C;
-}
-#projects{
-    background-color: #998C70;
-}
-.project-window{
-    border-style:solid;
-    border-color: black;
-    text-align: center;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-.pagesection{
-    text-align: center;
-}
-#contact-intro{
-    background-color:#CD883B;
-}
-@media screen and (max-width:500px){
+@media only screen and (max-width: 800px) {
     *{
-        padding:0;
-        margin:0;
-        color:#080603;
+        text-align: center;
     }
-    #nav ul{
-        display:flex;
-        justify-content: center;
-        justify-content: space-between;
-        margin-left:10px;
-        margin-right:10px;
+    h1{
+        font-size:3rem;
     }
-    #nav li{
-        display:inline;
+    h2{
+        font-size:1.7rem;
     }
-    #introduction{
-        display: flex;
-        width: auto;
-        justify-content: center;
-        height: 105vh;
+    p{
+        font-size:1.3rem;
     }
-    #introduction img{
+    #navMenu{
+        display:none;
+    }
+    #menuButton{
         display:block;
-        margin: 0 auto;
-        border-radius: 50%;
-        height:400px;
-        width:400px;
     }
-    #name{
-        text-align: center;
-        font-size:40px;
-        color:white;
-        margin-top:50%;
-    }
-    #about{
-        height:200px;
-        background-color: #AA7432;
-        padding-bottom:30px;
-    }
-    #personalskills{
-        text-align: center;
-    }
-    #personalskills li{
-        padding-bottom:5px;
-        list-style: none;
-    }
-    #languagesknown{
-        padding-left:10px;
-        padding-right:10px;
-    }
-    #languagesknown ul{
+    #servicesOffered_blocks{
         display:flex;
-        list-style: none;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-    .lkbox{
-        align-content: center;
+    .serviceOffered_singleblock{
+        display:block;
+        margin-bottom:30px;
+        min-width:100%;
     }
-    .lkbox-details{
-        padding-right:5px;
+    .projectScreenshot, .projectCard{
+        flex-direction: column;
+        align-items: center;
     }
-    .lkbox p{
-        text-align: center;
+    #contactArea{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactArea_window{
+        display:block;
+        margin-bottom:30px;
+        background-color: #595358;
+        min-width:350px;
+        height:200px;
+        color:#B4E1FF;
+        border-radius: 10%;
+    }
+    #desktopView{
+        display:none;
+    }
+    .projectrow{
+        display:flex;
+    }
+    a{
+        font-size:21px;
+        text-decoration: none;
+        color:#B4E1FF
+    }
+    a:hover{
+        color:#E9B44C;
+    }
+    button{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        width:200px;
+        height:50px;
+        font-size:1.3rem;
+    }
+    button:hover{
+        opacity: .75;
+        background-color: #595358;
+        color:#B4E1FF;
+    }
+    nav {
+        display:inline-flex;
+        color:#B4E1FF;
+        width:100%;
+        background-color: #595358;
+        font-size:30px;
+    }
+    #navMenu{
+        display:none;
+    }
+    #navMenuMobile{
+        display:none;
+        color:#B4E1FF; 
+        background-color: #595358;
+    }
+    #navMenuMobile>ul{
+        font-size: 1.7rem;
+    }
+    #navMenuMobile>ul>li{
         padding-bottom:5px;
     }
-    .lkimg{
-        height:75px;
-        width:75px;
-    }
-    #professionalreviews{
-        text-align:center;
-    }
-    .review-text{
-        padding-top:20px;
-        padding-bottom:20px;
-    }
-    .reviewerName{
-        padding-top:10px;
-    }
-    .description{
-        margin-left:3%;
+    #menuButton{
+        height:60px;
+        width:60px;
         margin-right:3%;
     }
-    #professionalreviews{
-        background-color: #F1C77C;
+    #header-name{
+        margin-left:5%;
+        text-align: left;
+        width:80%;
     }
-    #projects{
-        background-color: #998C70;
+    #navMenuMobile>ul{
+        list-style: none;
+        display:block;
+        width:100%;
     }
-    .project-window{
-        border-style:solid;
-        border-color: black;
+    #navMenu>ul>li{
+        padding-right:30px;
+    }
+    #navMenu>ul>li:hover{
+        color:#9B2915;
+    }
+    #homeArea{
+        height:100vh;
+    }
+    #homeArea_text{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #servicesHeader{
         text-align: center;
-        padding-top:10px;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    #servicesOffered_blocks{
+        display:inline-flex;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .serviceOffered_singleblock{
+        background-color: #595358;
+        width:33%;
+        padding:30px;
+        margin-left:15px;
+        margin-right:15px;
+        border-radius: 15px;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    .serviceOffered_header{
+        padding-bottom:20px;
+    }
+    #projectHeader{
+        margin-top:10%;
+    }
+    #projectHeader, #projectSubHeader{
+        text-align: center;
         padding-bottom:10px;
     }
-    .pagesection{
+    .projectrow{
+        display:flex;
+        flex-direction: column;
+        min-height:200px;
+    }
+    .projectButtonArea{
+        display:flex;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    .projectRowButton{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        min-width:100px;
+        min-height:50px;
+        font-size:1.3rem;
+    }
+    .projectCard{
+        display:block;
+        width:100%;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:30px;
+    }
+    .projectScreenshot{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #595358;
+        color:#B4E1FF;
+        min-height:100px;
+    }
+    .projectTitle{
+        padding-bottom:10px;
+    }
+    .projectText{
+        padding-bottom:10px;
+    }
+    #aboutMeArea{
+        column-count: 2;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #aboutMePhotoSide{
+        display:flex;
+    }
+    #aboutMePhoto{
+        height:300px;
+        width:300px;
+        margin-left:10%;
+        margin-right:10%;
+        border-radius: 50%;
+        margin-top:30px;
+    }
+    #aboutMeTextSide{
+        display:block;
+        margin-top:10%;
+        margin-left:20px;
+        margin-right:20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #contactAreaHeader{
+        text-align: center;
+        margin-top:10%;
+        padding-bottom:20px;
+    }
+    #contactArea{
+        column-count: 3;
+        display:flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .icon{
+        height:100px;
+        width:100px;
+    }
+    .contactArea_textbox{
+        text-align: center;
+        padding-top:20px;
+    }
+    .contactArea_boxhead{
+        padding-bottom:10px;
+    }
+    footer{
+        margin-top:10%;
+        background-color:#595358;
+        color:#B4E1FF;
         text-align: center;
     }
-    #contact-intro{
-        background-color:#CD883B;
+    #footerAttributionAreaButtons{
+        width:100%;
+    }
+    .attributionButton{
+        width:100%;
+        display:block;
+        align-self: center;
+    }
+    #attributionArea, #attributionareaclosebtn{
+        display:none;
+    }
+    
+}
+@media only screen and (min-width: 800px) {
+    #menuButton{
+        display:none;
+    }
+    h1{
+        font-size:3rem;
+    }
+    h2{
+        font-size:1.7rem;
+    }
+    p{
+        font-size:1.3rem;
+    }
+    #mobileView{
+        display:none;
+    }
+    a{
+        font-size:21px;
+        text-decoration: none;
+        color:#B4E1FF
+    }
+    a:hover{
+        color:#E9B44C;
+    }
+    button{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        width:200px;
+        height:50px;
+        font-size:1.3rem;
+    }
+    button:hover{
+        opacity: .75;
+        background-color: #595358;
+        color:#B4E1FF;
+    }
+    nav {
+        display:inline-flex;
+        column-count:2;
+        color:#B4E1FF;
+        width:100%;
+        background-color: #595358;
+        font-size:30px;
+    }
+    #navMenuMobile{
+        display:none;
+    }
+    #menuButton{
+        height:60px;
+        width:60px;
+    }
+    #header-name{
+        margin-left:4%;
+        column-width: auto;
+        width:60%;
+    }
+    #navMenu>ul{
+        list-style: none;
+        display:inline-flex;
+        margin-top:1.5%;
+    }
+    #navMenu>ul>li{
+        padding-right:30px;
+    }
+    #navMenu>ul>li:hover{
+        color:#9B2915;
+    }
+    #homeArea{
+        height:100vh;
+    }
+    #homeArea_text{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #servicesHeader{
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    #servicesOffered_blocks{
+        display:inline-flex;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .serviceOffered_singleblock{
+        background-color: #595358;
+        width:33%;
+        padding:30px;
+        margin-left:15px;
+        margin-right:15px;
+        border-radius: 15px;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    .serviceOffered_header{
+        padding-bottom:20px;
+    }
+    #projectHeader{
+        margin-top:10%;
+    }
+    #projectHeader, #projectSubHeader{
+        text-align: center;
+        padding-bottom:10px;
+    }
+    .projectrow{
+        display:flex;
+        min-height:200px;
+    }
+    .projectButtonArea{
+        display:flex;
+        margin-bottom:20px;
+    }
+    .projectRowButton{
+        background-color: #E9B44C;
+        border-radius: 12px;
+        min-width:100px;
+        min-height:50px;
+        font-size:1.3rem;
+    }
+    .projectCard{
+        width:50%;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:30px;
+    }
+    .projectScreenshot{
+        display:flex;
+        width:50%;
+        justify-content: center;
+        align-items: center;
+        background-color: #595358;
+        color:#B4E1FF;
+    }
+    .projectTitle{
+        padding-bottom:10px;
+    }
+    .projectText{
+        padding-bottom:10px;
+    }
+    #aboutMeArea{
+        column-count: 2;
+        display:flex;
+    }
+    #aboutMePhotoSide{
+        display:flex;
+        width:50%;
+    }
+    #aboutMePhoto{
+        margin-top:10%;
+        margin-left:30%;
+        margin-right:30%;
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+    }
+    #aboutMeTextSide{
+        display:block;
+        margin-top:10%;
+        width:50%;
+    }
+    #contactAreaHeader{
+        text-align: center;
+        margin-top:10%;
+        padding-bottom:20px;
+    }
+    #contactArea{
+        column-count: 3;
+        display:flex;
+        justify-content: space-between;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .icon{
+        height:100px;
+        width:100px;
+    }
+    .contactArea_window{
+        background-color: #595358;
+        width:350px;
+        height:200px;
+        color:#B4E1FF;
+        border-radius: 10%;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #emailcontactwindow{
+        min-width:350px !important;
+    }
+    .contactArea_textbox{
+        text-align: center;
+        padding-top:20px;
+    }
+    .contactArea_boxhead{
+        padding-bottom:10px;
+    }
+    footer{
+        margin-top:10%;
+        background-color:#595358;
+        color:#B4E1FF;
+        text-align: center;
+    }
+    .attributionButton{
+        width:100%;
+    }
+    #attributionArea, #attributionareaclosebtn{
+        display:none;
     }
 }

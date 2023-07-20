@@ -4,106 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Portfolio.js"></script>
     <title>Jacob Schoff Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Nunito:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div style="background-image:url('./Assets/Cabin\ Image3.jpg');" class="title" id="introduction">
-        <div id="introductionContent">
-        <h2 id="name">Jacob Schoff<br>Software Engineer</h2>
+    <nav id="Nav">
+        <h1 id="header-name">Jake Schoff</h1>
+        <div id="navMenu">
+            <ul>
+                <li><a href="#homeArea">Home</a></li>
+                <li><a href="#servicesArea">Services</a></li>
+                <li><a href="#projectArea">Projects</a></li>
+                <li><a href="#aboutMeArea">About</a></li>
+                <li><a href="#contactAreaHeader">Contact</a></li>
+            </ul>
+        </div>
+        <img onclick="menuClick()" id="menuButton" src="Assets/menu.png">
+    </nav>
+    <div id="navMenuMobile">
+        <ul>
+            <li><a onclick="menuClose()" href="#homeArea">Home</a></li>
+            <li><a onclick="menuClose()" href="#servicesArea">Services</a></li>
+            <li><a onclick="menuClose()" href="#projectArea">Projects</a></li>
+            <li><a onclick="menuClose()" href="#aboutMeArea">About</a></li>
+            <li><a onclick="menuClose()" href="#contactAreaHeader">Contact</a></li>
+            <li><a onclick="menuClose()" href="">Close Menu</a></li>
+        </ul>
+    </div>
+    <div id="homeArea">
+        <div id="homeArea_text">
+            <h1>Hello, <br> My Name Is Jake</h1>
         </div>
     </div>
-    <div id="about">
-        <h2 class="pagesection">About</h2>
-        <div id="personalskills">
-            <li>Quick learning | Self-taught | Motivated</li>
-            <li>4+ years of software experience</li>
-            <li>Front-end web development specialty with backend and data knowledge</li>
-            <li>Continuous growth approach</li>
+    <div id="servicesArea">
+        <div id="servicesHeader">
+            <h1>Services</h1>
+            <p>Specializing in front-end web development, my expertise is focused on making your web page
+                not only user friendly but visually appealing. Why give the customer a web page when you can
+                give them an experience?
+            </p>
         </div>
-        <div id="languagesknown">
+        <div id="servicesOffered_blocks">
+            <div class="serviceOffered_singleblock">
+                <h2 class="serviceOffered_header">UI/UX Design</h2>
+                <p class="serviceOffered_text">With a plethora of tools at my disposal, crafting a digital experience is my forte.</p>
+            </div>
+            <div class="serviceOffered_singleblock">
+                <h2 class="serviceOffered_header">SEO Optimization</h2>
+                <p class="serviceOffered_text">Search engine algorithms can cause unexpected issues with marketing of your product. Allow me to help
+                    navigate through those difficult waters with optimization techniques.
+                </p>
+            </div>
+            <div class="serviceOffered_singleblock">
+                <h2 class="serviceOffered_header">Landing Page</h2>
+                <p class="serviceOffered_text">Building a business has enough headaches and having a healthy webpage shouldn't be one more.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="projectArea">
+        <h1 id="projectHeader">Recent Projects</h1>
+        <p id="projectSubHeader"><em>All projects built using HTML5, CSS3, JavaScript</em></p>
+        <div id="desktopView">
+            <div class="projectrow">
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+                <div class="projectCard" id="socialMediaApp">
+                    <h2 class="projectTitle">Social Media App</h2>
+                    <p class="projectText">Includes navigation, primary feed, messaging area, and a search bar</p>
+                    <div class="projectButtonArea">
+                        <button class="projectRowButton">Source Code</button>
+                        <button class="projectRowButton">See the page</button>
+                    </div>
+                </div>
+            </div>
+            <div class="projectrow">
+                <div class="projectCard" id="taylorProductions">
+                    <h2 class="projectTitle">Taylor Productions</h2>
+                    <p class="projectText">Includes links to numerous videos and created content, commentary areas, search bar, and more</p>
+                    <div class="projectButtonArea">
+                        <button class="projectRowButton">Source Code</button>
+                        <button class="projectRowButton">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+            <div class="projectrow">
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+                <div class="projectCard" id="hartMortgage">
+                    <h2 class="projectTitle">Hart Mortgage Page</h2>
+                    <p class="projectText">Includes links to complete a mortgage application and information surrounding the process </p>
+                    <div class="projectButtonArea">
+                        <button class="projectRowButton">Source Code</button>
+                        <button class="projectRowButton">See the page</button>
+                    </div>
+                </div>
+            </div>
+            <div class="projectrow">
+                <div class="projectCard" id="cheeseWheels">
+                    <h2 class="projectTitle">Cheese Wheels</h2>
+                    <p class="projectText">Includes a menu, hours, locations, and more about the quality and perfection of the products</p>
+                    <div class="projectButtonArea">
+                        <button class="projectRowButton">Source Code</button>
+                        <button class="projectRowButton">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+            <div class="projectrow">
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+                <div class="projectCard" id="ricosTacos">
+                    <h2 class="projectTitle">Rico's Tacos</h2>
+                    <p>Includes a menu, hours, location, ingredients, and more about Ames' best Taco Truck</p>
+                    <div class="projectButtonArea">
+                        <button class="projectRowButton">Source Code</button>
+                        <button class="projectRowButton">See the page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobileView">
+            <div class="projectrow">
+                <div class="projectCard" id="socialMediaApp">
+                    <h2 class="projectTitle">Social Media App</h2>
+                    <p class="projectText">Includes navigation, primary feed, messaging area, and a search bar</p>
+                    <div class="projectButtonArea">
+                        <button class="linktosourcecode">Source Code</button>
+                        <button class="linktowebpage">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+            <div class="projectrow">
+                <div class="projectCard" id="taylorProductions">
+                    <h2 class="projectTitle">Taylor Productions</h2>
+                    <p class="projectText">Includes links to numerous videos and created content, commentary areas, search bar, and more</p>
+                    <div class="projectButtonArea">
+                        <button class="linktosourcecode">Source Code</button>
+                        <button class="linktowebpage">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+            <div class="projectrow">
+                <div class="projectCard" id="hartMortgage">
+                    <h2 class="projectTitle">Hart Mortgage Page</h2>
+                    <p class="projectText">Includes links to complete a mortgage application and information surrounding the process </p>
+                    <div class="projectButtonArea">
+                        <button class="linktosourcecode">Source Code</button>
+                        <button class="linktowebpage">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+            <div class="projectrow">
+                <div class="projectCard" id="cheeseWheels">
+                    <h2 class="projectTitle">Cheese Wheels</h2>
+                    <p class="projectText">Includes a menu, hours, locations, and more about the quality and perfection of the products</p>
+                    <div class="projectButtonArea">
+                        <button class="linktosourcecode">Source Code</button>
+                        <button class="linktowebpage">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+            <div class="projectrow">
+                <div class="projectCard" id="ricosTacos">
+                    <h2 class="projectTitle">Rico's Tacos</h2>
+                    <p>Includes a menu, hours, location, ingredients, and more about Ames' best Taco Truck</p>
+                    <div class="projectButtonArea">
+                        <button class="linktosourcecode">Source Code</button>
+                        <button class="linktowebpage">See the page</button>
+                    </div>
+                </div>
+                <div class="projectScreenshot"><p>Coming Soon!</p></div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutMeArea">
+        <div id="aboutMePhotoSide">
+            <img id="aboutMePhoto" src="Assets/profile photo stand in.jpg" alt="Jacob_Schoff_Headshot">
+        </div>
+        <div id="aboutMeTextSide">
+            <h1 id="aboutMeHeader">About Me</h1>
+            <h2 id="aboutMeSubheader">Web Developer</h2>
+            <p id="aboutMeText">Proficient in HTML, CSS, and JavaScript, I pride myself on having a CI/CD approach to my education.
+                Programming is an ever evolving field and I am working diligently to better myself through courses, seminars, and 
+                programming groups.
+            </p>
+        </div>
+    </div>
+    <div id="educationArea">
+        <h1>Education</h1>
+        <div id="courseraCourses">
+            <h2>Coursera</h2>
+            <h3>IBM Full Stack Software Developer Professional Certificate (41% Completed)</h3>
+            <p>Completed courses:</p>
             <ul>
-                <li class="lkbox">
-                    <div class="lkbox-details">
-                        <img class="lkimg" src="./Assets/HTML5_logo_and_wordmark.svg.png"></img>
-                    </div>
-                </li>
-                <li class="lkbox">
-                    <div class="lkbox-details">
-                        <img class="lkimg" src="./Assets/CSS3_logo_and_wordmark.svg.png"></img>
-                    </div>
-                </li>
-                <li class="lkbox">
-                    <div class="lkbox-details">
-                        <img class="lkimg" src="./Assets/javascript.png"></img>
-                    </div>
-                </li>
-                <li class="lkbox">
-                    <div class="lkbox-details">
-                        <img class="lkimg" src="./Assets/React-icon.svg.png"></img>
-                    </div>
-                </li>
-                <li class="lkbox">
-                    <div class="lkbox-details">
-                        <img class="lkimg" src="./Assets/Python-logo-notext.svg.png"></img>
-                    </div>
-                </li>
+                <li>Application Development using Microservices and Serverless</li>
+                <li>Developing Front-End Apps with React</li>
+                <li>Introduction to Cloud Computing</li>
+                <li>Getting Started with Git and GitHub</li>
+                <li>Introduction to Web Development with HTML, CSS, JavaScript</li>
             </ul>
         </div>
     </div>
-    
-    <div class="pagesection" id="projects">
-        <h2 class="section-title">In Development</h2>
-        <div id="projects-list">
-            <div class="project-window">
-                <div class="project-title">
-                    <h3>Rico's Tacos</h3>
-                </div>
-                <div class="project-description"><p>Landing Page</p>
-                </div>
+    <h1 id="contactAreaHeader">Contact Information</h1>
+    <div id="contactArea">
+        <div class="contactArea_window">
+            <div class="contactArea_textbox">
+                <h2 class="contactArea_boxhead">Phone</h2>
+                <img class="icon" src="Assets/phone.png">
+                <p>515-450-6039</p>
             </div>
-            <div class="project-window">
-                <div class="project-title">
-                    <h3>Portfolio Redesign</h3>
-                </div>
-                <div class="project-description"><p>UI/UX updates | Content updates</p>
-                </div>
+        </div>
+        <div id="emailcontactwindow" class="contactArea_window">
+            <div  class="contactArea_textbox">
+                <h2 class="contactArea_boxhead">Email</h2>
+                <img class="icon" src="Assets/message.png">
+                <p>Jacob.Alan.Schoff@gmail.com</p>
             </div>
-            <div class="project-window">
-                <div class="project-title"><h3>Hart Financial Services</h3>
-                </div>
-                <div class="project-description"><p>Landing page | Calculators | Data retention</p>
-                </div>
+        </div>
+        <div class="contactArea_window">
+            <div class="contactArea_textbox">
+                <h2 class="contactArea_boxhead">Github</h2>
+                <img class="icon" src="Assets/github.png" a href="https://github.com/jschoff155">
             </div>
         </div>
     </div>
-    <div class="pagesection" id="contact">
-        <div class="pagesection" id="professionalreviews">
-            <div class="review-text" id="hartReview">
-                <p class="description">"I've worked with Jake for 5 years now, every day he comes in with a positive, can do attitude.
-                    He's quick, efficient, and knowledgeable leading to his presence creative a warm and welcoming environment for colleagues and clients"</p></h3>
-                <p class="reviewerName">- <b>Scott Hart</b></p>
-                <p class="professionalDescription">Mortgage Consultant with Wells Fargo</p>
-            </div>
-            <div class="review-text" id="gustafsonReview">
-                <p class="description">"You will feel heard. Not only did he offer amazing suggestions to my idea, he truly heard what I wanted and needed and incorporated that into my product"</p></h3>
-                <p class="reviewerName">- <b>Benett Gustafson</b></p>
-                <p class="professionalDescription"></p>
-            </div>
-            <div class="review-text" id="taylorReview">
-                <p class="description">"Jacob is very helpful and he takes the time to get the job done right"</p></h3>
-                <p class="reviewerName">- <b>Devin Taylor</b></p>
-                <p class="professionalDescription">Technical Media Producer with Gray Media</p>
-            </div>
+    <footer>
+        <h2>Jacob Schoff</h2>
+        <h3>Web development done differently</h3>
+        <div id="footerAttributionAreaButtons">
+            <button class="attributionButton" onclick="showAttribution()" id="attributionareabtn">Attribution Details</button>
+            <button class="attributionButton" onclick="closeAttribution()"id="attributionareaclosebtn">Close Attribution Details</button>
         </div>
-        <div id="contact-intro">
-            <h2 class="section-title">Let's Work Together</h2>
-            <div id="lets-work-together-text">
-                <p>Send me an email to make an inquiry</p>
-                <p>Schoff.software@gmail.com</p>
-            </div>
+        <div id="attributionArea">
+            <a href="https://www.flaticon.com/free-animated-icons/phone" title="phone animated icons">Phone animated icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-animated-icons/email" title="email animated icons">Email animated icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a>
         </div>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
