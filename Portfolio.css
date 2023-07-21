@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+ul{
+    list-style-type: none;
+}
+
 @media only screen and (max-width: 800px) {
     *{
         text-align: center;
@@ -151,7 +155,7 @@
     .serviceOffered_header{
         padding-bottom:20px;
     }
-    #projectHeader{
+    #projectHeader, #servicesArea, #projectArea{
         margin-top:10%;
     }
     #projectHeader, #projectSubHeader{
@@ -220,6 +224,9 @@
         margin-right:20px;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    #educloseButton, #courseCompetencies{
+        display:none;
     }
     #contactAreaHeader{
         text-align: center;
@@ -338,10 +345,10 @@
         justify-content: center;
         align-items: center;
     }
-    #servicesHeader{
+    #servicesHeader, #aboutMeArea, #aboutMeText, #educationArea, #contactAreaHeader{
         text-align: center;
-        padding-top:50px;
-        padding-bottom:50px;
+        margin-top:5%;
+        margin-bottom:5%;
     }
     #servicesOffered_blocks{
         display:inline-flex;
@@ -406,26 +413,22 @@
     .projectText{
         padding-bottom:10px;
     }
-    #aboutMeArea{
-        column-count: 2;
-        display:flex;
-    }
-    #aboutMePhotoSide{
-        display:flex;
-        width:50%;
-    }
     #aboutMePhoto{
-        margin-top:10%;
-        margin-left:30%;
-        margin-right:30%;
+        margin-left:40%;
+        margin-right:40%;
         height:300px;
         width:300px;
         border-radius: 50%;
     }
-    #aboutMeTextSide{
-        display:block;
-        margin-top:10%;
-        width:50%;
+    #aboutMeText, #educationArea{
+        text-align: center;
+        margin-left:20%;
+        margin-right:20%;
+    }
+    #courseraCourses{
+        background-color: #595358;
+        color: #B4E1FF;
+        border-radius: 10%;
     }
     #contactAreaHeader{
         text-align: center;
@@ -462,13 +465,16 @@
     .contactArea_boxhead{
         padding-bottom:10px;
     }
+    #educloseButton, #courseCompetencies{
+        display:none;
+    }
     footer{
         margin-top:10%;
         background-color:#595358;
         color:#B4E1FF;
         text-align: center;
     }
-    .attributionButton{
+    .attributionButton, #eduButton, #educloseButton{
         width:100%;
     }
     #attributionArea, #attributionareaclosebtn{

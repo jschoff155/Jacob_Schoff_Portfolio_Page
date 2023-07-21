@@ -185,25 +185,24 @@
         </div>
     </div>
     <div id="aboutMeArea">
-        <div id="aboutMePhotoSide">
             <img id="aboutMePhoto" src="Assets/profile photo stand in.jpg" alt="Jacob_Schoff_Headshot">
-        </div>
-        <div id="aboutMeTextSide">
-            <h1 id="aboutMeHeader">About Me</h1>
-            <h2 id="aboutMeSubheader">Web Developer</h2>
-            <p id="aboutMeText">Proficient in HTML, CSS, and JavaScript, I pride myself on having a CI/CD approach to my education.
-                Programming is an ever evolving field and I am working diligently to better myself through courses, seminars, and 
-                programming groups.
-            </p>
-        </div>
+    </div>
+    <div id="aboutMeText">
+        <h1>About Me</h1>
+        <h2>Web Developer</h2>
+        <p>Proficient in HTML, CSS, and JavaScript, I pride myself on having a CI/CD approach to my education.
+            Programming is an ever evolving field and I am working diligently to better myself through courses, seminars, and 
+            programming groups.
+        </p>
     </div>
     <div id="educationArea">
         <h1>Education</h1>
         <div id="courseraCourses">
             <h2>Coursera</h2>
             <h3>IBM Full Stack Software Developer Professional Certificate (41% Completed)</h3>
-            <p>Completed courses:</p>
-            <ul>
+            <button onclick="showCompetencies()" id="eduButton">Course Competencies</button>
+            <button onclick="closeCompetencies()" id="educloseButton">Close Competencies</button>
+            <ul id="courseCompetencies">
                 <li>Application Development using Microservices and Serverless</li>
                 <li>Developing Front-End Apps with React</li>
                 <li>Introduction to Cloud Computing</li>
@@ -238,6 +237,7 @@
     <footer>
         <h2>Jacob Schoff</h2>
         <h3>Web development done differently</h3>
+        <p>Copyright Jacob Schoff 2023</p>
         <div id="footerAttributionAreaButtons">
             <button class="attributionButton" onclick="showAttribution()" id="attributionareabtn">Attribution Details</button>
             <button class="attributionButton" onclick="closeAttribution()"id="attributionareaclosebtn">Close Attribution Details</button>

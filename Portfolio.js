@@ -16,3 +16,13 @@ function menuClose() {
     document.getElementById("navMenuMobile").style.display="none";
     document.getElementById("menuButton").style.display="block";
 }
+function showCompetencies() {
+    document.getElementById("eduButton").style.display="none";
+    document.getElementById("courseCompetencies").style.display="block";
+    document.getElementById("educloseButton").style.display="block";
+}
+function closeCompetencies() {
+    document.getElementById("eduButton").style.display="block";
+    document.getElementById("courseCompetencies").style.display="none";
+    document.getElementById("educloseButton").style.display="none";
+}
