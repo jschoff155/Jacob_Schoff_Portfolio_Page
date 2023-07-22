@@ -366,6 +366,10 @@ ul{
         margin-top:5%;
         margin-bottom:5%;
     }
+    #servicesHeader{
+        margin-left:20%;
+        margin-right:20%;
+    }
     #servicesOffered_blocks{
         display:inline-flex;
         margin-left:10%;
