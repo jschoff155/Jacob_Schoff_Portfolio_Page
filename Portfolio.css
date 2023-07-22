@@ -51,6 +51,8 @@ ul{
         height:200px;
         color:#B4E1FF;
         border-radius: 10%;
+        margin-left:10%;
+        margin-right:10%;
     }
     #desktopView{
         display:none;
@@ -161,6 +163,8 @@ ul{
     #projectHeader, #projectSubHeader{
         text-align: center;
         padding-bottom:10px;
+        margin-left:10%;
+        margin-right:10%;
     }
     .projectrow{
         display:flex;
@@ -217,16 +221,30 @@ ul{
         border-radius: 50%;
         margin-top:30px;
     }
-    #aboutMeTextSide{
-        display:block;
+    #aboutMeText{
         margin-top:10%;
-        margin-left:20px;
-        margin-right:20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    #educationArea{
+        margin-top:10%;
     }
     #educloseButton, #courseCompetencies{
         display:none;
+    }
+    #courseraCourses{
+        margin-bottom:30px;
+        background-color: #595358;
+        color:#B4E1FF;
+        border-radius: 10%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    #courseCompetencies>li{
+        margin-top:15px;
+        margin-bottom:15px;
+        margin-left:10%;
+        margin-right:10%;
     }
     #contactAreaHeader{
         text-align: center;
@@ -234,9 +252,6 @@ ul{
         padding-bottom:20px;
     }
     #contactArea{
-        column-count: 3;
-        display:flex;
-        justify-content: space-between;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -260,10 +275,8 @@ ul{
     #footerAttributionAreaButtons{
         width:100%;
     }
-    .attributionButton{
+    .attributionButton, #eduButton, #educloseButton{
         width:100%;
-        display:block;
-        align-self: center;
     }
     #attributionArea, #attributionareaclosebtn{
         display:none;
@@ -467,6 +480,12 @@ ul{
     }
     #educloseButton, #courseCompetencies{
         display:none;
+    }
+    #courseCompetencies>li{
+        margin-top:15px;
+        margin-bottom:15px;
+        margin-left:10%;
+        margin-right:10%;
     }
     footer{
         margin-top:10%;
