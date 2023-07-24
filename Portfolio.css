@@ -125,12 +125,12 @@ ul{
         color:#9B2915;
     }
     #homeArea{
-        height:100vh;
+        height:50vh;
     }
+
     #homeArea_text{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        margin-top:20%;
+        margin-bottom:20%;
     }
     #servicesHeader{
         text-align: center;
@@ -355,6 +355,7 @@ ul{
     }
     #homeArea{
         height:100vh;
+        
     }
     #homeArea_text{
         display:flex;
