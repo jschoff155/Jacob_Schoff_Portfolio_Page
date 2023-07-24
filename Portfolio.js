@@ -26,3 +26,6 @@ function closeCompetencies() {
     document.getElementById("courseCompetencies").style.display="none";
     document.getElementById("educloseButton").style.display="none";
 }
+function gotoRicos(){
+        location.href= "https://ricostacos.netlify.app/";
+    }
