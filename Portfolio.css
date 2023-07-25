@@ -414,6 +414,9 @@ ul{
         min-height:50px;
         font-size:1.3rem;
     }
+    img{
+        width:100%;
+    }
     .projectCard{
         width:50%;
         padding-left:30px;
