@@ -7,6 +7,18 @@
 ul{
     list-style-type: none;
 }
+a{
+    font-size:1.3rem;
+}
+li{
+    font-size:1.4rem;
+}
+#finalProject{
+    color:#E9B44C;
+}
+#courseCompetencies{
+    padding-bottom:15px;
+}
 
 @media only screen and (max-width: 800px) {
     *{
@@ -210,14 +222,10 @@ ul{
         flex-direction: column;
         justify-content: center;
     }
-    #aboutMePhotoSide{
-        display:flex;
-    }
     #aboutMePhoto{
         height:300px;
         width:300px;
-        margin-left:10%;
-        margin-right:10%;
+        margin:auto;
         border-radius: 50%;
         margin-top:30px;
     }
@@ -239,9 +247,6 @@ ul{
         border-radius: 10%;
         margin-left:5%;
         margin-right:5%;
-    }
-    #courseCompetencies{
-        padding-bottom:15px;
     }
     #courseCompetencies>li{
         margin-top:15px;
@@ -438,11 +443,11 @@ ul{
         padding-bottom:10px;
     }
     #aboutMePhoto{
-        margin-left:40%;
-        margin-right:40%;
         height:300px;
         width:300px;
+        margin:auto;
         border-radius: 50%;
+        margin-top:30px;
     }
     #aboutMeText, #educationArea{
         text-align: center;
