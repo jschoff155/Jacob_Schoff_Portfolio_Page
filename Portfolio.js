@@ -29,3 +29,8 @@ function closeCompetencies() {
 function gotoRicos(){
         location.href= "https://ricostacos.netlify.app/";
     }
+function gotoCheeseWheels(){
+    location.href= "https://cheesewheelsbeta.netlify.app/";
+}
+
+    
