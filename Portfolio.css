@@ -184,6 +184,9 @@ li{
         display:flex;
         flex-direction: column;
         min-height:200px;
+        border-style:solid;
+        border-width:3px;
+        border-color:#E9B44C;
     }
     .projectButtonArea{
         display:flex;
