@@ -22,6 +22,21 @@ li{
 #compeltedScreenshot{
     background-color: white;
 }
+.projectPhoto{
+    width:100%;
+    height:100%;
+}
+.projectCard{
+    display:block;
+    width:100%;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    text-align: center;
+}
+.projectTitle, .projectText{
+    padding-bottom:10px;
+}
 @media only screen and (max-width: 800px) {
     *{
         text-align: center;
@@ -48,10 +63,6 @@ li{
         margin-bottom:30px;
         min-width:100%;
     }
-    .projectScreenshot, .projectCard{
-        flex-direction: column;
-        align-items: center;
-    }
     #contactArea{
         display:flex;
         flex-direction: column;
@@ -67,12 +78,6 @@ li{
         border-radius: 10%;
         margin-left:10%;
         margin-right:10%;
-    }
-    #desktopView{
-        display:none;
-    }
-    .projectrow{
-        display:flex;
     }
     a{
         font-size:21px;
@@ -139,14 +144,7 @@ li{
         color:#9B2915;
     }
     #homeArea{
-        height:80vh;
-    }
-    #homeAreaPhoto{
-        height:300px;
-        width:300px;
-        margin:auto;
-        border-radius: 50%;
-        margin-top:30px;
+        height:50vh;
     }
     #homeArea_text{
         margin-top:20%;
@@ -186,6 +184,7 @@ li{
         margin-left:10%;
         margin-right:10%;
     }
+    
     .projectrow{
         display:flex;
         flex-direction: column;
@@ -193,6 +192,11 @@ li{
         border-style:solid;
         border-width:3px;
         border-color:#E9B44C;
+        border-style:solid;
+        border-width:3px;
+        border-color:#E9B44C;
+        display:flex;
+        min-height:200px;
     }
     .projectButtonArea{
         display:flex;
@@ -206,32 +210,18 @@ li{
         min-height:50px;
         font-size:1.3rem;
     }
-    .projectCard{
-        display:block;
-        width:100%;
-        padding-left:30px;
-        padding-right:30px;
-        padding-top:30px;
-    }
-    .projectScreenshot{
-        display:flex;
-        width:100%;
-        justify-content: center;
-        align-items: center;
-        background-color: #595358;
-        color:#B4E1FF;
-        min-height:100px;
-    }
-    .projectTitle{
-        padding-bottom:10px;
-    }
-    .projectText{
-        padding-bottom:10px;
-    }
+    
     #aboutMeArea{
         display:flex;
         flex-direction: column;
         justify-content: center;
+    }
+    #aboutMePhoto{
+        height:300px;
+        width:300px;
+        margin:auto;
+        border-radius: 50%;
+        margin-top:30px;
     }
     #aboutMeText{
         margin-top:10%;
@@ -307,9 +297,6 @@ li{
     }
     p{
         font-size:1.3rem;
-    }
-    #mobileView{
-        display:none;
     }
     a{
         font-size:21px;
@@ -415,6 +402,7 @@ li{
     .projectButtonArea{
         display:flex;
         margin-bottom:20px;
+        justify-content: center;
     }
     .projectRowButton{
         background-color: #E9B44C;
@@ -425,26 +413,6 @@ li{
     }
     img{
         width:100%;
-    }
-    .projectCard{
-        width:50%;
-        padding-left:30px;
-        padding-right:30px;
-        padding-top:30px;
-    }
-    .projectScreenshot{
-        display:flex;
-        width:50%;
-        justify-content: center;
-        align-items: center;
-        background-color: #595358;
-        color:#B4E1FF;
-    }
-    .projectTitle{
-        padding-bottom:10px;
-    }
-    .projectText{
-        padding-bottom:10px;
     }
     #aboutMePhoto{
         height:300px;
