@@ -139,9 +139,15 @@ li{
         color:#9B2915;
     }
     #homeArea{
-        height:50vh;
+        height:80vh;
     }
-
+    #homeAreaPhoto{
+        height:300px;
+        width:300px;
+        margin:auto;
+        border-radius: 50%;
+        margin-top:30px;
+    }
     #homeArea_text{
         margin-top:20%;
         margin-bottom:20%;
@@ -226,13 +232,6 @@ li{
         display:flex;
         flex-direction: column;
         justify-content: center;
-    }
-    #aboutMePhoto{
-        height:300px;
-        width:300px;
-        margin:auto;
-        border-radius: 50%;
-        margin-top:30px;
     }
     #aboutMeText{
         margin-top:10%;
