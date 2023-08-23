@@ -27,10 +27,12 @@ function closeCompetencies() {
     document.getElementById("educloseButton").style.display="none";
 }
 function gotoRicos(){
-        location.href= "https://ricostacos.netlify.app/";
-    }
-function gotoCheeseWheels(){
-    location.href= "https://cheesewheelsbeta.netlify.app/";
+    location.href= "https://ricostacos.netlify.app/";
 }
-
+function gotoColorChanger(){
+    location.href= "https://jacobschoffcolorchanger.netlify.app/";
+}
+function gotoSubZero(){
+    location.href= "https://subzerodetailing.netlify.app/";
+}
     
