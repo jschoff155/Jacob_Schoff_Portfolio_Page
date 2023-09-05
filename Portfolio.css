@@ -19,6 +19,9 @@ ul{
 body{
     background-color: #E9B44C;
 }
+@media only screen and (min-width: 800px){
+    
+}
 #topNav{
     margin-left:6%;
     margin-top: 2%;
@@ -51,6 +54,7 @@ margin:5%;
     display:flex;
 }
 .textfield{
+    width:90%;
     border-style:solid;
     border-width:1px;
     border-radius:10px;
@@ -62,6 +66,7 @@ margin:5%;
 }
 .textFieldContent{
     margin:2%;
+
 }
 .windowTitle{
     margin-bottom:10px;
@@ -81,18 +86,12 @@ margin:5%;
 #proficiencies{
     width:74.7vw;
 }
-#languagePhotos{
-    display:flex;
-    justify-content: space-between;
-}
-#HTML:hover{
-    background-color: #E9B44C;
-    color:#B4E1FF;
-    
-}
 .languageLogo{
-    height:5em;
-    width: 5em;
+    min-height:3em;
+    min-width: 3em;
+    max-height:5em;
+    max-width: 5em;
+    display:flex;
 }
 #educationArea{
     text-align:center;
@@ -119,7 +118,105 @@ margin:5%;
     height: 3em;
 }
 @media only screen and (max-width: 800px){
-
+    *{
+        text-align: center;
+    }
+    #topNav{
+        width:90%;
+        padding:5px;
+        background-color: #7D8CC4;
+        border-radius: 10px;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    #windowSelection{
+        display:flex;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .windowSelectionButton{
+        background-color: #7D8CC4;
+        color:#B4E1FF;
+        border-radius:10px;
+        border-style:none;
+        width:70px;
+        height:30px;
+    }
+    .windowSelectionButton:hover{
+        background-color:#E9B44C;
+    }
+    .contentWindow{
+    margin:5%;
+    }
+    .displayrow{
+        display:block;
+    }
+    .textfield{
+        border-style:solid;
+        border-width:1px;
+        border-radius:10px;
+        width:90%;
+        min-height:20vh;
+        background-color: #7D8CC4;
+        color:#BEE7E8;
+    }
+    .windowTitle{
+        margin-bottom:10px;
+    }
+    #connectButtonField{
+        display:flex;
+        margin-top:20%;
+        justify-content: center;
+    }
+    #connectButton{
+        width:80%;
+        height:3em;
+        border-style:solid;
+        border-width:1px;
+        border-radius:10px;
+    }
+    #proficiencies{
+        width:80%;
+    }
+    #languagePhotos{
+        width:90%;
+        display:block;
+        column-count: 2;
+        justify-content: space-between;
+    }
+    #HTML:hover{
+        background-color: #E9B44C;
+        color:#B4E1FF;
+    }
+    .languageLogo{
+        height:3em;
+        width: 3em;
+        
+    }
+    #educationArea{
+        text-align:center;
+    }
+    #courseraCourses{
+        column-count:2;
+    }
+    #projectGuideArea{
+        display:block;
+    }
+    .projectArea{
+        width:80%;
+        text-align: center;
+        border-style:solid;
+        margin:20px;
+        padding:20px;
+        border-radius:10px;
+    }
+    .projectButton, .projectTitle, .projectDescription{
+        margin:20px;
+    }
+    .projectButton{
+        width:50%;
+        height: 3em;
+    }
 }
 /*
 #finalProject{
