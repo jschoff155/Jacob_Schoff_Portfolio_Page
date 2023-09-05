@@ -4,15 +4,124 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+#portfolio, #aboutMe{
+    display:none;
+}
+/*color pallet
+#B4E1FF;;
+#E9B44C;
+#9B2915;
+#595358;
+*/
 ul{
     list-style-type: none;
 }
-a{
-    font-size:1.3rem;
+body{
+    background-color: #E9B44C;
 }
-li{
-    font-size:1.4rem;
+#topNav{
+    margin-left:6%;
+    margin-top: 2%;
+    padding:5px;
+    background-color: #7D8CC4;
+    width:250px;
+    border-radius: 10px;
 }
+#windowSelection{
+    display:flex;
+    justify-content: space-between;
+    margin-left:5%;
+    margin-right:5%;
+}
+.windowSelectionButton{
+    background-color: #7D8CC4;
+    color:#B4E1FF;
+    border-radius:10px;
+    border-style:none;
+    width:70px;
+    height:30px;
+}
+.windowSelectionButton:hover{
+    background-color:#E9B44C;
+}
+.contentWindow{
+margin:5%;
+}
+.displayrow{
+    display:flex;
+}
+.textfield{
+    border-style:solid;
+    border-width:1px;
+    border-radius:10px;
+    min-width:200px;
+    margin: 1%;
+    min-height:20vh;
+    background-color: #7D8CC4;
+    color:#BEE7E8;
+}
+.textFieldContent{
+    margin:2%;
+}
+.windowTitle{
+    margin-bottom:10px;
+}
+#connectButtonField{
+    display:flex;
+    margin-top:20%;
+    justify-content: center;
+}
+#connectButton{
+    width:80%;
+    height:3em;
+    border-style:solid;
+    border-width:1px;
+    border-radius:10px;
+}
+#proficiencies{
+    width:74.7vw;
+}
+#languagePhotos{
+    display:flex;
+    justify-content: space-between;
+}
+#HTML:hover{
+    background-color: #E9B44C;
+    color:#B4E1FF;
+    
+}
+.languageLogo{
+    height:5em;
+    width: 5em;
+}
+#educationArea{
+    text-align:center;
+}
+#courseraCourses{
+    column-count:2;
+}
+#projectGuideArea{
+    display:flex;
+}
+.projectArea{
+    width:30%;
+    text-align: center;
+    border-style:solid;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+.projectButton, .projectTitle, .projectDescription{
+    margin:20px;
+}
+.projectButton{
+    width:50%;
+    height: 3em;
+}
+@media only screen and (max-width: 800px){
+
+}
+/*
 #finalProject{
     color:#E9B44C;
 }
