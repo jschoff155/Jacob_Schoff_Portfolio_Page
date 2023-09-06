@@ -33,4 +33,3 @@ function gotoColorChanger(){
 function gotoSubZero(){
     location.href= "https://subzeromobiledetailing.com/";
 }
-    
