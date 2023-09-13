@@ -1,3 +1,9 @@
-# Jacob_Schoff_Portfolio_Page
+Portfolio Page
 
-Portfolio Page highlighting my skills, accomplishments, and a little more about my professional background
+Includes breakdown of my current standing as a professional developer including:
+Languages I'm experience in
+Services I offer to clients
+Previous Projects 
+Information about myself
+Continuing education area
+Contact information
