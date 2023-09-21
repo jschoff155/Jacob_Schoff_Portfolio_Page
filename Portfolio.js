@@ -27,9 +27,6 @@ function showAbout() {
 function gotoRicos(){
     location.href= "https://ricostacos.netlify.app/";
 }
-function gotoColorChanger(){
-    location.href= "https://jacobschoffcolorchanger.netlify.app/";
-}
 function gotoSubZero(){
     location.href= "https://subzeromobiledetailing.com/";
 }
