@@ -1,0 +1,26 @@
+/* MAIN HEADER */
+#title{
+    text-align: center;
+}
+#buttonHome{
+    display:flex;
+    justify-content: center;
+}
+.jsProject{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+/*WEATHER APP*/
+input{
+    border-radius: 10px;
+    margin-left:10px;
+    margin-right:10px;
+    color:black;
+}
+/*TO DO LIST*/
+/*QUIZ APP*/
+/*CURRENCYCONVERTER*/
+/*POMODORO TIMER*/
