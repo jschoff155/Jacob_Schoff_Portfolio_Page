@@ -14,13 +14,191 @@ li{
 }
 
 /*WEATHER APP*/
-input{
+.weather{
+    background-image: linear-gradient(to left, #01110A, #78E3FD);
+    display:flex;
+    justify-content: center;
+}
+.weatherApplicationContents{
+    margin-top:10%;
+    background-color: #D1F5FF;
+    border-radius: 10px;
+    padding:30px;
+    text-align: center;
+}
+.weatherinput{
     border-radius: 10px;
     margin-left:10px;
     margin-right:10px;
     color:black;
+    height:20px;
+    font-size: 1.2em;
+    text-align: center;
 }
+.weatherButton{
+    width:50%;
+    border-radius: 10px;
+    margin-top:5px;
+    background-color: #78E3FD;
+}
+
+/*POMODORO TIMER */
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --pomodoro: hsl(224, 55%, 54%);
+    --shortBreak: hsl(49, 33%, 28%);
+    --longBreak: hsl(105, 59%, 34%);
+  }
+  
+  .pomodoroTimer {
+    background-color: var(--pomodoro);
+    transition: background-color 2s ease;
+    display:flex;
+    justify-content: center;
+  }
+  
+  progress {
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top:20px;
+  }
+  
+  progress::-webkit-progress-bar {
+   background-color: rgba(0, 0, 0, 0.1);;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #fff;
+  }
+  
+  .timer {
+    margin-top:20%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+  }
+  
+  .clock {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left:10%;
+    margin-right:10%;
+    font-size: 5em;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-family: arial, sans-serif;
+  }
+  
+  .mode-button {
+    font-size: 16px;
+    height: 28px;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: 300;
+    color: #fff;
+    border: 1px solid transparent;
+    margin: 0px;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+  }
+  
+  .mode-button.active {
+    background-color: #fff;
+    color:black;
+  }
+  
+  .startBtn {
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: hsl(175, 26%, 41%);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+  }
+  
+  button:focus, button:active {
+    outline: none;
+  }
+  
+  .main-button.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+  }
+
 /*TO DO LIST*/
-/*QUIZ APP*/
-/*CURRENCYCONVERTER*/
-/*POMODORO TIMER*/
+.todoApplication{
+    background-image: linear-gradient(to right, #1B4353, #2892D7);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+.toDoContainer{
+    text-align: center;
+    background-color: #A9E4EF;
+    width:400px;
+    border-radius: 10px;
+    padding:20px;
+}
+.toDoRow{
+    margin-top:15px;
+}
+#toDoInputBox{
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+    height:20px;
+    border-radius: 10px;
+    border-width:2px;
+    font-size:1.2em;
+}
+.toDoButton{
+    width:20%;
+    height:20px;
+    border-radius: 10px;
+}
+.toDoListContainer{
+    list-style: none;
+    margin-top:20px;
+}
+li{
+    border-radius: 10px;
+    background-color: #6DAEDB;
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    height:30px;
+    font-size:1.4em;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+span{
+    float:right;
+    margin-right:10px;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
+span:hover{
+    background-color: gray;
+}
