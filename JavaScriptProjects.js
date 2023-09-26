@@ -1,3 +1,19 @@
+function showWeather(){
+    document.getElementById("weather").style.display="flex";
+    document.getElementById("pomodoroTimer").style.display="none";
+    document.getElementById("todoApplication").style.display="none";
+}
+function showTimer(){
+    document.getElementById("weather").style.display="none";
+    document.getElementById("pomodoroTimer").style.display="flex";
+    document.getElementById("todoApplication").style.display="none";
+}
+function showToDo(){
+    document.getElementById("weather").style.display="none";
+    document.getElementById("pomodoroTimer").style.display="none";
+    document.getElementById("todoApplication").style.display="flex";
+}
+
 // POMODORO CODE //
 const timer = {
     pomodoro: 25,
@@ -154,5 +170,43 @@ const timer = {
     switchMode('pomodoro');
   });
 
-
+  //TO DO LIST CODE //
+  const inputBox = document.getElementById("toDoInputBox");
+  const listContainer = document.getElementById("toDoListContainer");
+  
+  function addTask(){
+  
+      if (inputBox.value === ""){
+          alert("Please input an item you'd like to add");
+      }
+      else{
+          let li = document.createElement("li");
+          li.innerHTML = inputBox.value;
+          listContainer.appendChild(li);
+          let span = document.createElement("span");
+          span.innerHTML = "\u00d7";
+          li.appendChild(span);
+      }
+      inputBox.value = ""
+      saveData();
+  }
+  
+  listContainer.addEventListener("click", function(e){
+      if(e.target.tagName ==="LI"){
+          e.target.classList.toggle("checked");
+          saveData();
+      }
+      else if(e.target.tagName ==="SPAN"){
+          e.target.parentElement.remove();
+          saveData();
+      }
+  }, false);
+  
+  function saveData(){
+      localStorage.setItem("data", listContainer.innerHTML);
+  }
+  function ShowList(){
+      listContainer.innerHTML = localStorage.getItem("data");
+  }
+  ShowList();
 
