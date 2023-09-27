@@ -6,172 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="Portfolio.js"></script>
     <title>Jacob Schoff Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="Portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Nunito:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="Nav">
-        <h1 id="header-name">Jake Schoff</h1>
-        <div id="navMenu">
-            <ul>
-                <li><a href="#homeArea">Home</a></li>
-                <li><a href="#servicesArea">Services</a></li>
-                <li><a href="#projectArea">Projects</a></li>
-                <li><a href="#aboutMeArea">About</a></li>
-                <li><a href="#contactAreaHeader">Contact</a></li>
+    <nav>
+        <div id="topNav">
+            <ul id="windowSelection">
+                <li><button class="windowSelectionButton" id="navButtonHome" onclick="showHome()">Home</button></li>
+                <li><button class="windowSelectionButton" id="navButtonPortfolio" onclick="showPortfolio()">Projects</button></li>
+                <li><button class="windowSelectionButton" id="navButtonAbout" onclick="showAbout()">About</button></li>
             </ul>
         </div>
-        <img onclick="menuClick()" id="menuButton" src="Assets/menu.png">
     </nav>
-    <div id="navMenuMobile">
-        <ul>
-            <li><a onclick="menuClose()" href="#homeArea">Home</a></li>
-            <li><a onclick="menuClose()" href="#servicesArea">Services</a></li>
-            <li><a onclick="menuClose()" href="#projectArea">Projects</a></li>
-            <li><a onclick="menuClose()" href="#aboutMeArea">About</a></li>
-            <li><a onclick="menuClose()" href="#contactAreaHeader">Contact</a></li>
-            <li><a onclick="menuClose()" href="">Close Menu</a></li>
-        </ul>
-    </div>
-    <div id="homeArea">
-        <div id="aboutMeArea">
-            <img id="aboutMePhoto" src="Assets/profile photo stand in.jpg" alt="Jacob_Schoff_Headshot">
-        </div>
-        <div id="homeArea_text">
-            <h1>Hello, My Name Is Jake</h1>
-        </div>
-    </div>
-    <div id="servicesArea">
-        <div id="servicesHeader">
-            <h1>Services</h1>
-            <p>Specializing in front-end web development, my expertise is focused on making your web page
-                not only user friendly but visually appealing.
-            </p>
-        </div>
-        <div id="servicesOffered_blocks">
-            <div class="serviceOffered_singleblock">
-                <h2 class="serviceOffered_header">UI/UX Design</h2>
-                <p class="serviceOffered_text">With a plethora of tools at my disposal, crafting a digital experience is my forte.</p>
+
+    <div id="homeArea" class="contentWindow">
+        <div class="displayrow">
+            <div class="textfield">
+                <div class="textFieldContent">
+                    <h2 class="windowTitle">Hello, I'm Jake</h2>
+                    <p>A front-end web developer working to hone his skills on the backend and database engineering.
+                        I enjoy programming, reading, and listening to music.
+                    </p>
+                </div>
             </div>
-            <div class="serviceOffered_singleblock">
-                <h2 class="serviceOffered_header">SEO Optimization</h2>
-                <p class="serviceOffered_text">Search engine algorithms can cause unexpected issues with marketing of your product. Allow me to help
-                    navigate through those difficult waters with optimization techniques.
+            <div class="textfield" onclick="showPortfolio()">
+                <div class="textFieldContent" >
+                    <h2 class="windowTitle" >Projects</h2>
+                    <p>Take a look</p>
+                </div>
+            </div>
+            <div class="textfield" onclick="showAbout()">
+                <div class="textFieldContent">
+                    <h2 class="windowTitle">About Me</h2>
+                    <p>The man behind the machine</p>
+                </div>
+            </div>
+        </div>
+        <div class="displayrow">
+            <div id="availableToWork" class="textfield">
+                <div class="textFieldContent">
+                    <h2 class="windowTitle">Taking on clients</h2>
+                    <p>Let's work together</p>
+                    <div id="connectButtonField">
+                       <button id="connectButton">Let's get started</button>
+                    </div>
+                </div>
+            </div>
+            <div id="proficiencies" class="textfield">
+                <div class="textFieldContent">
+                    <h2 class="windowTitle">Proficiencies - Click Each Item to see more</h2>
+                    <div class="main-slider">
+                        <ul id="languagePhotos">
+                            <li><a href="JavaScriptProjects.html"><img class="languageLogo" title="HTML" src="./Assets/HTML5_logo_and_wordmark.svg.png"></a></li>
+                            <li><a href="JavaScriptProjects.html"><img class="languageLogo" title="CSS" src="./Assets/CSS3_logo_and_wordmark.svg.png"></a></li>
+                            <li><a href="JavaScriptProjects.html"><img class="languageLogo" title="JavaScript" src="./Assets/javascript.png"></a></li>
+                            <li><img class="languageLogo" title="React" src="./Assets/React-icon.svg.png"></li>
+                            <li><img class="languageLogo" title="Azure" src="./Assets/Microsoft Azure logo.png"></li>
+                            <li><img class="languageLogo" title="Angular" src="./Assets/Angular Logo.png"></li>
+                            <li><img class="languageLogo" title=".NET" src="./Assets/dotnet logo.png"></li>
+                            <li><img class="languageLogo" title="Python" src="./Assets/Python-logo-notext.svg.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="portfolio" class="contentWindow">
+        <div class="textfield">
+            <div class="textFieldContent">
+                <h2>Projects</h2>
+                <div id="projectGuideArea">
+                    <div class="projectArea">
+                        <h2 class="projectTitle">Subzero Mobile Detailing</h2>
+                        <h4 class="projectDescription">BUILT FOR CLIENT: Mobile detailing webpage for small business owner</h4>
+                        <button class="projectButton" onclick="gotoSubZero()">See the page</button>
+                    </div>
+                    <div class="projectArea">
+                        <h2 class="projectTitle">Ricos Tacos</h2>
+                        <h4 class="projectDescription">BUILT FOR CLIENT: Includes a menu, hours, location, ingredients, and more about Ames' best Taco Truck</h4>
+                        <button class="projectButton" onclick="gotoRicos()">See the page</button>
+                    </div>
+                    <div class="projectArea">
+                        <h2 class="projectTitle">Home Finance Hero</h2>
+                        <h4 class="projectDescription">React Application providing you a status on how ready for applying for a home loan you are.</h4>
+                        <button class="projectButton">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="aboutMe" class="contentWindow">
+        <div class="textfield">
+            <div class="textFieldContent">
+                <h2>About Me</h2>
+                <h2>Software Engineer</h2>
+                <p>Continuous growth and development are how I choose to live my life. I practice coding, strength train, and learn new skills
+                    to continue to better myself as an individual. Developing others into their best selves has been a hallmark of my professional career
+                    acting as a team lead and facilitator for the better part of a decade.
                 </p>
             </div>
-            <div class="serviceOffered_singleblock">
-                <h2 class="serviceOffered_header">Landing Page</h2>
-                <p class="serviceOffered_text">Building a business has enough headaches and having a healthy webpage shouldn't be one more.
-                </p>
-            </div>
         </div>
-    </div>
-    <div id="projectArea">
-        <h1 id="projectHeader">Projects</h1>
-        <p id="projectSubHeader"><em>All projects built using HTML5, CSS3, and JavaScript (React) </em></p>
-            <div class="projectrow">
-                <div class="projectCard" id="taylorProductions">
-                    <h2 class="projectTitle">SubZero Mobile Detailing</h2>
-                    <p class="projectText"><em>BUILT FOR CLIENT: </em><br>Mobile detailing webpage for small business owner</p>
-                    <div class="projectButtonArea">
-                        <button class="projectRowButton" onclick="gotoSubZero()">See the page</button>
+        <div id="educationArea">
+            <div class="textfield">
+                <div class="textFieldContent">
+                    <h1>Continuing Education</h1>
+                        <h2>Coursera</h2>
+                    <div id="courseraCourses">
+                        <div id="completedCourses">
+                            <ul>
+                                <li style="font-size:1.4em;">Completed Courses</li>
+                                <li>ASP.NET for Experienced Developers Specialization</li>
+                                <li>Introduction to .NET Core</li>
+                            </ul>
+                        </div>
+                        <div id="enrolledCourses">
+                            <ul>
+                                <li style="font-size:1.4em;">Enrolled Courses</li>
+                                <li>Meta Front-End Developer Professional Certificate</li>
+                                <li>IBM Full Stack Software Developer Professional Certificate</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="projectrow">
-                <div class="projectCard" id="hartMortgage">
-                    <h2 class="projectTitle">Hart Mortgage Application</h2>
-                    <p class="projectText">React application used to calculate income, liabilities, and success percentage for home application. </p>
-                    <div class="projectButtonArea">
-                        <button class="projectRowButton">Coming Soon</button>
-                    </div>
-                </div>
-            </div>
-            <div class="projectrow">
-                <div class="projectCard" id="cheeseWheels">
-                    <h2 class="projectTitle">Color Changer</h2>
-                    <p class="projectText">Utilized DOM control commands to change the background color. Included reset button to return to orginal browser view.</p>
-                    <div class="projectButtonArea">
-                        <button class="projectRowButton" onclick="gotoColorChanger()">See the page</button>
-                    </div>
-                </div>
-            </div>
-            <div class="projectrow">
-                <div class="projectCard" id="ricosTacos">
-                    <h2 class="projectTitle">Rico's Tacos</h2>
-                    <p><em>BUILT FOR CLIENT:  <em style="color:red">**Revisions in progress**</em></em><br>Includes a menu, hours, location, ingredients, and more about Ames' best Taco Truck</p>
-                    <div class="projectButtonArea">
-                        <button id="ricosButton" class="projectRowButton" onclick="gotoRicos()">See the page</button>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <div id="aboutMeText">
-        <h1>About Me</h1>
-        <h2>Software Engineer</h2>
-        <p>Experienced in several programming languages I pride myself on having a Continuous Integration/Continuous Development approach to my education.
-            Programming is an ever evolving field and I am working diligently to better myself through courses, seminars, and 
-            software engineering groups.
-        </p>
-    </div>
-    <div id="educationArea">
-        <h1>Continuing Education</h1>
-        <div id="courseraCourses">
-            <h2>Coursera</h2><br>
-            <h3>ASP.NET for Experienced Developers Specialization (Board Infinity)</h3>
-            <h3>Completed July 2023</h3><br>
-            <h3>IBM Full Stack Software Developer Professional Certificate - In Progress</h3>
-            <button onclick="showCompetencies()" id="eduButton">Course Competencies</button>
-            <button onclick="closeCompetencies()" id="educloseButton">Close Competencies</button>
-            <ul id="courseCompetencies">
-                <li>Getting Started with Git and GitHub</li>
-                <li>Introduction to Web Development with HTML, CSS, JavaScript</li>
-                <li>Application Development using Microservices and Serverless</li>
-                <li>Developing Front-End Apps with React</li>
-                <li><a href="https://github.com/jschoff155/ejtos-react_budget_app" id="finalProject"> >> React final project << </a></li>
-                <li>Introduction to Cloud Computing</li>
-                <li><a href="https://cloud-object-storage-cos-standard-idv.s3.us-east.cloud-object-storage.appdomain.cloud/IBMCloudTestObject.html" id="finalProject"> >> Cloud computing final project << </a></li>
-            </ul>
         </div>
     </div>
-    <h1 id="contactAreaHeader">Contact Information</h1>
-    <div id="contactArea">
-        <div class="contactArea_window">
-            <div class="contactArea_textbox">
-                <h2 class="contactArea_boxhead">Phone</h2>
-                <img class="icon" src="Assets/phone.png">
-                <a href="tel:515-450-6039"><p>515-450-6039</p></a>
-            </div>
-        </div>
-        <div id="emailcontactwindow" class="contactArea_window">
-            <div class="contactArea_textbox">
-                <h2 class="contactArea_boxhead">Email</h2>
-                <img class="icon" src="Assets/message.png">
-                <a href="mailto:Jacob.Alan.Schoff@gmail.com"><p>Jacob.Alan.Schoff@gmail.com</p></a>
-            </div>
-        </div>
-        <div class="contactArea_window">
-            <div class="contactArea_textbox">
-                <h2 class="contactArea_boxhead">Github</h2>
-                <img class="icon" src="Assets/github.png">
-                <a href="https://github.com/jschoff155"><p>jschoff155</p></a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>Copyright Jacob Schoff 2023</p>
-        <div id="footerAttributionAreaButtons">
-            <button class="attributionButton" onclick="showAttribution()" id="attributionareabtn">Attribution Details</button>
-            <button class="attributionButton" onclick="closeAttribution()"id="attributionareaclosebtn">Close Attribution Details</button>
-        </div>
-        <div id="attributionArea">
-            <a href="https://www.flaticon.com/free-animated-icons/phone" title="phone animated icons">Phone animated icons created by Freepik - Flaticon</a><br>
-            <a href="https://www.flaticon.com/free-animated-icons/email" title="email animated icons">Email animated icons created by Freepik - Flaticon</a><br>
-            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a><br>
-            <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a>
-        </div>
-    </footer>
 </body>
 </html>

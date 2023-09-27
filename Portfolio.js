@@ -1,38 +1,32 @@
-function showAttribution() {
-    document.getElementById("attributionArea").style.display="block";
-    document.getElementById("attributionareaclosebtn").style.display="block";
-    document.getElementById("attributionareabtn").style.display="none";
+function showHome() {
+    document.getElementById("homeArea").style.display="block";
+    document.getElementById("portfolio").style.display="none";
+    document.getElementById("aboutMe").style.display="none";
+    document.getElementById("navButtonHome").style.background="#E9B44C";
+    document.getElementById("navButtonPortfolio").style.background="#7D8CC4";
+    document.getElementById("navButtonAbout").style.background="#7D8CC4";
+
 }
-function closeAttribution() {
-    document.getElementById("attributionArea").style.display="none";
-    document.getElementById("attributionareaclosebtn").style.display="none";
-    document.getElementById("attributionareabtn").style.display="block";
+function showPortfolio() {
+    document.getElementById("homeArea").style.display="none";
+    document.getElementById("portfolio").style.display="block";
+    document.getElementById("aboutMe").style.display="none";
+    document.getElementById("navButtonHome").style.background="#7D8CC4";
+    document.getElementById("navButtonPortfolio").style.background="#E9B44C";
+    document.getElementById("navButtonAbout").style.background="#7D8CC4";
 }
-function menuClick() {
-    document.getElementById("navMenuMobile").style.display="block";
-    document.getElementById("menuButton").style.display="none";
+function showAbout() {
+    document.getElementById("homeArea").style.display="none";
+    document.getElementById("portfolio").style.display="none";
+    document.getElementById("aboutMe").style.display="block";
+    document.getElementById("navButtonHome").style.background="#7D8CC4";
+    document.getElementById("navButtonPortfolio").style.background="#7D8CC4";
+    document.getElementById("navButtonAbout").style.background="#E9B44C";
 }
-function menuClose() {
-    document.getElementById("navMenuMobile").style.display="none";
-    document.getElementById("menuButton").style.display="block";
-}
-function showCompetencies() {
-    document.getElementById("eduButton").style.display="none";
-    document.getElementById("courseCompetencies").style.display="block";
-    document.getElementById("educloseButton").style.display="block";
-}
-function closeCompetencies() {
-    document.getElementById("eduButton").style.display="block";
-    document.getElementById("courseCompetencies").style.display="none";
-    document.getElementById("educloseButton").style.display="none";
-}
+
 function gotoRicos(){
     location.href= "https://ricostacos.netlify.app/";
 }
-function gotoColorChanger(){
-    location.href= "https://jacobschoffcolorchanger.netlify.app/";
-}
 function gotoSubZero(){
-    location.href= "https://subzerodetailing.netlify.app/";
+    location.href= "https://subzeromobiledetailing.com/";
 }
-    

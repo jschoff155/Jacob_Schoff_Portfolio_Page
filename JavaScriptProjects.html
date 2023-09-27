@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JavaScriptProjects.css">
+    <script src="JavaScriptProjects.js" defer></script>
+    <title>JavaScript Projects</title>
+</head>
+<body>
+    <h2 id="title">JavaScript Projects</h2>
+        <div id="projectSelector">
+            <button class="selectionButton" onclick="showWeather()">Weather Application</button>
+            <button class="selectionButton" onclick="showTimer()">Pomodoro Timer</button>
+            <button class="selectionButton" onclick="showToDo()">To Do List</button>
+        </div>
+
+    <div class="welcomeScreen">
+        <h2>Please select a project from above to see functionality and design.</h2>
+    </div>
+    
+        <div id="weather" class="projectArea">
+            <div class="weatherApplicationContents">
+                <h2>Weather Application</h2>
+                <div class="search">
+                    <input class="weatherInput" type="text" placeholder="Enter location here" spellcheck="false">
+                    <button class="weatherButton">Search</button>
+                    <div class="weather">
+                        <div><p></p></div>
+                        <h2 class="temp"></h2>
+                        <h2 class="city"></h2>
+                            <div class="col">
+                                <p class="high"></p>
+                                <p class="low"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <script>
+                    const apiKey = "8d3c85f36b1326b0c37148a3fb559b0e";
+                    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
+        
+                    const searchBox = document.querySelector(".search input");
+                    const searchBtn = document.querySelector(".search button");
+        
+                    async function checkWeather(city){
+                        const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+                        var data = await response.json();
+        
+                        console.log(data);
+                        
+                        document.querySelector(".temp").innerHTML = Math.round(data.main.temp)  + "°F";
+                        document.querySelector(".city").innerHTML = data.name;
+                        document.querySelector(".high").innerHTML = "Low " + Math.round(data.main.temp_max)  + "°F";
+                        document.querySelector(".low").innerHTML = "High " + Math.round(data.main.temp_min)  + "°F";
+                    }
+        
+                    searchBtn.addEventListener("click", ()=>{
+                        checkWeather(searchBox.value);
+                    })
+                </script>
+    
+        <div id="pomodoroTimer" class="projectArea">
+            <div id="pomodoroTimerContainer">
+                <div class="timer">
+                    <div class="modeButtons" id="js-mode-buttons">
+                        <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">Pomodoro</button>
+                        <button data-mode="shortBreak" class="button mode-button" id="js-short-break">Short break</button>
+                        <button data-mode="longBreak" class="button mode-button" id="js-long-break">Long break</button>
+                    </div>
+            
+                    <progress id="js-progress" value="0"></progress>
+                    <div class="progress-bar"></div>
+            
+                    <div class="clock" id="js-clock">
+                        <span class="clockSpan" id="js-minutes">25</span>
+                        <span class="clockSpan"></span>
+                        <span class="clockSpan" id="js-seconds">00</span>
+                    </div>
+            
+                    <button class="startBtn" data-action="start" id="js-btn">Start</button>
+                    </div>
+            </div>
+        </div>
+    
+        <div id="todoApplication" class="projectArea">
+            <div class="toDoContainer">
+                <div class="todo-app">
+                    <h2>Things to do</h2>
+                    <div class="toDoRow">
+                        <input id="toDoInputBox" type="text" placeholder="  Add task here">
+                        <button class="toDoButton" onclick= "addTask()">Add</button>
+                    </div>
+                </div>
+                <ul id="toDoListContainer">
+                    
+                </ul>
+            </div>
+        </div>
+
+</body>
+</html>
+
+
+
