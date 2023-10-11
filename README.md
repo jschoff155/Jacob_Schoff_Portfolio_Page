@@ -1,5 +1,4 @@
 Portfolio Page
-CURRENTLY UNDER REVISIONS
 
 Includes breakdown of my current standing as a professional developer including:
 Languages I'm experience in
