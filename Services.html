@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Portfolio.js"></script>
+    <title>Services</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Nunito:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="Nav">
+        <h1 id="header-name">Jake Schoff</h1>
+        <div id="navMenu">
+            <ul>
+                <li><a href="#homeArea">Home</a></li>
+                <li><a href="#servicesArea">Services</a></li>
+                <li><a href="#projectArea">Projects</a></li>
+                <li><a href="#aboutMeArea">About</a></li>
+                <li><a href="#contactAreaHeader">Contact</a></li>
+            </ul>
+        </div>
+        <img onclick="menuClick()" id="menuButton" src="Assets/menu.png">
+    </nav>
+    <div id="navMenuMobile">
+        <ul>
+            <li><a onclick="menuClose()" href="index.html">Home</a></li>
+            <li><a onclick="menuClose()" href="">References</a></li>
+            <li><a onclick="menuClose()" href="Projects.html">Projects</a></li>
+            <li><a onclick="menuClose()" href="About.html">About</a></li>
+            <li><a onclick="menuClose()" href="Contact.html">Contact</a></li>
+            <li><a onclick="menuClose()" href="">Close Menu</a></li>
+        </ul>
+    </div>
+    <div id="servicesArea">
+        <div id="servicesHeader">
+            <h1>Services</h1>
+            <p>Specializing in front-end web development, my expertise is focused on making your web page
+                not only user friendly but visually appealing.
+            </p>
+        </div>
+        <div id="servicesOffered_blocks">
+            <div class="serviceOffered_singleblock">
+                <h2 class="serviceOffered_header">UI/UX Design</h2>
+                <p class="serviceOffered_text">With a plethora of tools at my disposal, crafting a digital experience is my forte.</p>
+            </div>
+            <div class="serviceOffered_singleblock">
+                <h2 class="serviceOffered_header">SEO Optimization</h2>
+                <p class="serviceOffered_text">Search engine algorithms can cause unexpected issues with marketing of your product. Allow me to help
+                    navigate through those difficult waters with optimization techniques.
+                </p>
+            </div>
+            <div class="serviceOffered_singleblock">
+                <h2 class="serviceOffered_header">Landing Page</h2>
+                <p class="serviceOffered_text">Building a business has enough headaches and having a healthy webpage shouldn't be one more.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
