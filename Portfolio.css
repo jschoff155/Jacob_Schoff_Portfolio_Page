@@ -68,9 +68,6 @@ li{
         margin-left:10%;
         margin-right:10%;
     }
-    #desktopView{
-        display:none;
-    }
     .projectrow{
         display:flex;
     }
