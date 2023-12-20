@@ -1,0 +1,11 @@
+#desktopView{
+    display:block;
+    text-align: center;
+}
+.projectBox{
+    display:block;
+    padding:20px;
+}
+button{
+    color:black;
+}
