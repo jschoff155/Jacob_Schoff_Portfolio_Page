@@ -22,6 +22,9 @@ li{
 #compeltedScreenshot{
     background-color: white;
 }
+#contactButton{
+    width: 50%;
+}
 @media only screen and (max-width: 800px) {
     *{
         text-align: center;
@@ -365,9 +368,10 @@ li{
         
     }
     #homeArea_text{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        display:block;
+        text-align: center;
+        margin-left:5%;
+        margin-right:5%;
     }
     #servicesHeader, #aboutMeArea, #aboutMeText, #educationArea, #contactAreaHeader{
         text-align: center;
